@@ -44,6 +44,34 @@ Pôvod handlerov tento skript neurčuje. Historický počet 1 sa nepovažuje
 za aktuálne overenie. Doplnky sa neinštalovali ani neupravovali.
 Engine, zariadenie a nový render neboli touto kontrolou overené.
 
+## Živé ovládanie cez MCP — pracovná verzia v01
+
+Cesta `blender-mcp-live-v1` je konkrétnym grantom aktivovaná výnimka pre celok
+`kysucka-moderna-chata-blender-mcp-first-reference-render`. Používa existujúce
+MCP spojenie s otvoreným Blenderom 5.2.3 LTS. `blender-local-v1` zostáva cestou
+lokálnej kontroly vrátane čítania uloženej pracovnej kópie v samostatnom procese.
+Opis cesty sám neposkytuje povolenie ďalších úprav ani inštalácie doplnkov.
+
+1. Pred zmenou over Git koreň, origin, baseline, povolený stav a príslušné hashe;
+   cez MCP prečítaj presnú otvorenú cestu, neuložený stav, aktívny objekt a režim.
+2. Pred opustením Edit režimu ulož skutočný živý stav pomocou
+   `save_as_mainfile(copy=True, compress=True)` do grantom pomenovaného checkpointu.
+   V01 používa `work/mcp-v01-owner-checkpoint.blend`; over uloženie a hash seedu.
+3. Prejdi do Object režimu, over zachovanie rozpracovanej geometrie a ulož aktívnu
+   kópiu `blender/kysucka_chata_mcp_v01.blend`. Pred korekciou bol samostatne
+   uložený `work/mcp-v01-before.blend`. Existujúce checkpointy neprepisuj.
+4. Porovnanie pred/po používa Cycles CPU, 640 × 480 a 32 vzoriek. Jediná zmena
+   obrazu je `CAM_A_REFERENCE.data.shift_y`: `0.17 → 0.075`; hodnotu potvrdilo
+   samostatné MCP čítanie. Snímky a presné príkazy sú v externom Meta celku
+   `projects/kysucka_moderna_chata/00/01-blender-mcp-first-reference-render/`.
+5. Uložená pracovná kópia má kanonických 1448 × 1086, 96 vzoriek a výstup
+   `//../work/camera_a.png`. GUI je v kamerovom režime Cycles so svetlami a svetom
+   scény; interaktívny náhľad má 16 vzoriek. Pri kontrole z disku nič neukladaj.
+
+Zdroj `model/parameters.json` obsahuje rovnaký posun kamery. Generátor ho už
+číta; živá scéna sa týmto krokom neprestavuje. Pred neskoršou regeneráciou treba
+zosúladiť prijatú verziu scény a zdrojov. V01 je pracovný kandidát na vizuálne prijatie.
+
 ## Zostavenie a render - iba s budúcim povolením
 
 Zdrojové skripty nevyžadujú add-on. `bpy` dodáva Blender; netreba `pip install bpy`.
@@ -59,8 +87,9 @@ a nič neinštalujú. Nemajú oprávnenie samy od seba meniť seed.
 
 ## Bežné otvorenie bez terminálu
 
-V Blenderi: File → Open → `blender/kysucka_chata_seed.blend`. Kamera je nastavená
-ako aktívna. Na notebooku možno použiť View → Cameras → Active Camera.
+V Blenderi: File → Open → `blender/kysucka_chata_mcp_v01.blend`. Zachovaný seed
+je `blender/kysucka_chata_seed.blend`. V01 má uložený kamerový pohľad Cycles
+so svetlami a svetom scény. Na notebooku možno použiť View → Cameras → Active Camera.
 F12 spustí render; pri dodanom rozlíšení môže na CPU trvať výrazne dlhšie
 než malý náhľad. Režim Solid je vhodný na rýchlu geometriu, Material Preview
 na materiály. Referencia je zabalená v dátach obrázkov ako

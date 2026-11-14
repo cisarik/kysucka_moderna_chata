@@ -57,6 +57,10 @@ scene checkpoint. Generated PDF/CAD and old renders do not own current 3D behavi
 Manual Blender edits do not flow back into JSON or generators. A later grant
 must identify accepted scene/source versions before regeneration.
 
+The current working candidate is `blender/kysucka_chata_mcp_v01.blend`, saved
+through live MCP from the preserved S00 scene. Its camera shift_y is 0.075,
+matching `model/parameters.json`; visual acceptance remains pending.
+
 Protected initialization SHA-256 values:
 
 | File | SHA-256 |
@@ -65,6 +69,13 @@ Protected initialization SHA-256 values:
 | reference/kysucka_chata_moderna.png | 05bc3e72161e5945379c86da80450ffdf82ddce6dbdd9b9e77071aa79cdecc96 |
 | model/parameters.json | 00b97dd1adc1b82a19685454d4ab40dfb60332c90c7ad2ad165eb9e73e39a162 |
 | scripts/build_scene.py | 4310a6ed69e577157c2a605b5c2a7b0128ca62ab667f69ea72aece47563884c2 |
+
+Current MCP v01 SHA-256 values (the initialization values above remain historical):
+
+| File | SHA-256 |
+|---|---|
+| model/parameters.json | 90a3bf95c9c51ea407ae1d749b481795733e88c083c07415ed0f58f916c6cc7a |
+| blender/kysucka_chata_mcp_v01.blend | 227edd9356a0e2917486351bce6e6fdbb62c58eacbfbb96101c1872d5235e4a8 |
 
 Preserve reference/, blender/, model/, scripts/, cad/, docs/*.pdf, previews/,
 manifest/*.sha256, requirements-docs.txt, and tools/ during initialization.
@@ -75,9 +86,16 @@ Historical inventories are retained evidence, not current repository gates.
 
 ### Blender capability route
 
-The canonical route is `blender-local-v1` in docs/OPERATIONS.md.
+The canonical local inspection route is `blender-local-v1` in docs/OPERATIONS.md.
 The observed executable is /Applications/Blender.app/Contents/MacOS/Blender,
 observed as 5.2.3 LTS. Seed-authoring provenance remains Blender 4.3.2.
+
+For `kysucka-moderna-chata-blender-mcp-first-reference-render`, the explicit
+implementation grant activates the task-specific `blender-mcp-live-v1` route:
+existing MCP tools control the live GUI for reads, owner checkpoints, working-copy
+saves, the camera shift, renders, readback, and camera/scene-world display.
+The active working file is `blender/kysucka_chata_mcp_v01.blend`; the seed remains
+preserved. This bounded deviation grants no future mutations or installations.
 
 Before an operation, verify the physical Git root, canonical project origin,
 the exact commit required by the current grant, permitted working-tree state,

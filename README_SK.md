@@ -12,17 +12,20 @@ ani architektonické preverenie sa zatiaľ netvrdia.
 2. Prečítaj AGENTS.md a docs/VISUAL_BRIEF.md. Aktuálny celok koordinuje jeho
    Orchestrator; Master koordinuje vývojový beh. Starý prompt sa z histórie
    nevykonáva ako nové povolenie.
-3. Vizuálny cieľ je reference/kysucka_chata_moderna.png. Zachovaný počiatočný
-   model je blender/kysucka_chata_seed.blend; referencia je v ňom zabalená.
-   Python auto-run ani add-on nie sú potrebné.
+3. Vizuálny cieľ je reference/kysucka_chata_moderna.png. Aktuálnu pracovnú kópiu
+   otvor cez File → Open → blender/kysucka_chata_mcp_v01.blend. Má uložený
+   kamerový pohľad Cycles so svetlami a svetom scény a posunom kamery
+   shift_y = 0.075. Zachovaný počiatočný model je blender/kysucka_chata_seed.blend;
+   referencia je zabalená v oboch súboroch. Na otvorenie netreba auto-run ani MCP.
 4. Michal doručuje aktuálne úplné prompty manuálne do určenej relácie.
    Režim a súradnice určuje grant. Súhlas s plánom ani tlačidlo Build
    neposkytujú realizačné povolenie.
 5. Prompty a správy patria do externého cisarik/meta podľa AGENTS.md.
    Worker uloží vlastnú správu len s povolením a dostupnou schopnosťou;
    pri obmedzení klienta vráti úplný výstup a uvedie chýbajúce uloženie.
-6. Inicializačný celok zavádza AP/Meta bez úpravy vizualizácie. Prácu na
-   kanonickom renderi, kamere alebo siluete musí vybrať a povoliť ďalší celok.
+6. Inicializačný celok zaviedol AP/Meta. Pracovná verzia v01 upravuje zvislé
+   rámovanie kamery; vizuálne prijatie zostáva na tebe. Ďalšie úpravy musí
+   pomenovať a povoliť aktuálny úplný grant.
 
 ## Obsah
 
@@ -32,12 +35,13 @@ ani architektonické preverenie sa zatiaľ netvrdia.
 | cad/Kysucka_chata_S00_all_views.dxf | všetkých 13 vektorových schém v jednom CAD súbore, v mm |
 | cad/*.dxf a cad/svg/ | samostatné editovateľné schémy; mm v DXF, tlačové mierky v SVG |
 | blender/kysucka_chata_seed.blend | reálny počiatočný model; Blender 4.3.2, metre |
+| blender/kysucka_chata_mcp_v01.blend | aktuálna pracovná kópia cez MCP; Blender 5.2.3 LTS, posun kamery 0.075, uložený kamerový pohľad Cycles |
 | previews/camera_a_material.png | skutočný počiatočný farebný render z .blend |
 | previews/camera_a_clay.png | skutočný sivý kontrolný render rovnakej kamery |
 | model/parameters.json | spoločné hlavné rozmery, otvory, miestnosti, materiálové ciele a kamera |
 | model/reference_landmarks.json | ručne orientačne označené body referencie, s neistotou |
 | scripts/ | znovuvytvorenie CAD/PDF a scény; iba s aktuálnym povolením úprav |
-| docs/OPERATIONS.md | lokálna cesta ovládania Blenderu; CLI bez MCP |
+| docs/OPERATIONS.md | lokálna kontrola Blenderu a grantom aktivovaná cesta živého MCP |
 | .ap/, .gitmodules | prijatý nemenný AP submodul; presný commit určuje gitlink |
 | AGENTS.md | aktuálne projektové pravidlá a vlastníci zdrojov |
 | reference/kysucka_chata_moderna.png | zachovaný vizuálny cieľ |
@@ -69,7 +73,7 @@ nemajú inštalovať len preto, že je otvorený Blender.
 ## Dôležité pre ďalšiu prácu
 
 - Pôvodný seed si zachovaj. Budúce verzie nech vznikajú ako pomenované kópie.
-- Worker používa deklarovanú cestu blender-local-v1 v docs/OPERATIONS.md; iná cesta vyžaduje konkrétny grant.
+- Worker používa cestu pomenovanú aktuálnym grantom: blender-local-v1 na lokálnu kontrolu, v tomto celku blender-mcp-live-v1 na živé ovládanie. Obe opisuje docs/OPERATIONS.md; ďalšie úpravy vyžadujú konkrétny grant.
 - Nepracuj súčasne ručne aj Workerom na tom istom súbore. GUI po externom
   uložení potrebuje bezpečné opätovné načítanie.
 - Ručná úprava .blend nemení JSON a generátor; pred regeneráciou sa musí
