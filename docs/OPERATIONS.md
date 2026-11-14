@@ -44,7 +44,7 @@ Pôvod handlerov tento skript neurčuje. Historický počet 1 sa nepovažuje
 za aktuálne overenie. Doplnky sa neinštalovali ani neupravovali.
 Engine, zariadenie a nový render neboli touto kontrolou overené.
 
-## Živé ovládanie cez MCP — pracovná verzia v01
+## Živé ovládanie cez MCP — v01 a aktuálna v02
 
 Cesta `blender-mcp-live-v1` je konkrétnym grantom aktivovaná výnimka pre celok
 `kysucka-moderna-chata-blender-mcp-first-reference-render`. Používa existujúce
@@ -72,6 +72,22 @@ Zdroj `model/parameters.json` obsahuje rovnaký posun kamery. Generátor ho už
 číta; živá scéna sa týmto krokom neprestavuje. Pred neskoršou regeneráciou treba
 zosúladiť prijatú verziu scény a zdrojov. V01 je pracovný kandidát na vizuálne prijatie.
 
+Pre celok `kysucka-moderna-chata-reference-camera-perspective` konkrétny
+realizačný grant znovu aktivoval `blender-mcp-live-v1`. Z nezmenenej v01
+sa porovnali tri kamery pri Cycles CPU, 640 × 480 a 32 vzorkách.
+Aktuálna pracovná scéna je `blender/kysucka_chata_mcp_v02.blend`: kamera
+`CAM_A_REFERENCE` má polohu `[21.5, -10.0, 1.25]`, cieľ `[8.5, 2.5, 1.25]`,
+ohnisko 35 mm, snímač 36 mm, shift_x = 0 a shift_y = 0.105. JSON obsahuje
+rovnaké hodnoty; orientáciu už počíta existujúci generátor. Geometria,
+materiály, sklo, svet, svetlá aj krajina zostali zachované, rovnako seed a v01.
+Kontrolný bod pred zmenou kamery je `work/mcp-v02-before.blend` s malým
+porovnávacím rozlíšením. V02 má obnovených 1448 × 1086, 96 vzoriek a výstup
+`//../work/camera_a.png`; živý pohľad Layout je CAMERA + RENDERED so svetlami
+a svetom scény a 16 vzorkami náhľadu. Samostatné otvorenie bez okna používa
+Solid; kameru a uložené renderovacie nastavenia overuje bez renderovania.
+Rendery a merania sú v externom Meta celku `00/02-reference-camera-perspective/`.
+Vizuálne prijatie zostáva otvorené. Tento opis neudeľuje ďalšie oprávnenie úprav.
+
 ## Zostavenie a render - iba s budúcim povolením
 
 Zdrojové skripty nevyžadujú add-on. `bpy` dodáva Blender; netreba `pip install bpy`.
@@ -87,8 +103,9 @@ a nič neinštalujú. Nemajú oprávnenie samy od seba meniť seed.
 
 ## Bežné otvorenie bez terminálu
 
-V Blenderi: File → Open → `blender/kysucka_chata_mcp_v01.blend`. Zachovaný seed
-je `blender/kysucka_chata_seed.blend`. V01 má uložený kamerový pohľad Cycles
+V Blenderi: File → Open → `blender/kysucka_chata_mcp_v02.blend`. Zachované sú
+`blender/kysucka_chata_mcp_v01.blend` a seed `blender/kysucka_chata_seed.blend`.
+V02 má nastavený kamerový pohľad Cycles
 so svetlami a svetom scény. Na notebooku možno použiť View → Cameras → Active Camera.
 F12 spustí render; pri dodanom rozlíšení môže na CPU trvať výrazne dlhšie
 než malý náhľad. Režim Solid je vhodný na rýchlu geometriu, Material Preview

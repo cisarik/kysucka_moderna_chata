@@ -290,23 +290,23 @@
   "camera": {
     "name": "CAM_A_REFERENCE",
     "location": [
-      27.5,
-      -15.5,
-      1.7
+      21.5,
+      -10.0,
+      1.25
     ],
     "target": [
-      7.45,
-      3.15,
-      1.7
+      8.5,
+      2.5,
+      1.25
     ],
-    "lens_mm": 50,
+    "lens_mm": 35,
     "sensor_width_mm": 36.0,
     "resolution": [
       1448,
       1086
     ],
     "status": "initial perspective estimate; calibration not accepted",
-    "shift_y": 0.075
+    "shift_y": 0.105
   },
   "materials": [
     {

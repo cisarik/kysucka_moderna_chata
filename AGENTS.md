@@ -57,9 +57,11 @@ scene checkpoint. Generated PDF/CAD and old renders do not own current 3D behavi
 Manual Blender edits do not flow back into JSON or generators. A later grant
 must identify accepted scene/source versions before regeneration.
 
-The current working candidate is `blender/kysucka_chata_mcp_v01.blend`, saved
-through live MCP from the preserved S00 scene. Its camera shift_y is 0.075,
-matching `model/parameters.json`; visual acceptance remains pending.
+The current working candidate is `blender/kysucka_chata_mcp_v02.blend`, saved
+through live MCP from the preserved v01 scene. Its camera location is
+[21.5, -10.0, 1.25], target [8.5, 2.5, 1.25], lens 35 mm and shift_y 0.105,
+matching `model/parameters.json`. S00 and v01 remain preserved;
+visual acceptance remains pending.
 
 Protected initialization SHA-256 values:
 
@@ -76,6 +78,13 @@ Current MCP v01 SHA-256 values (the initialization values above remain historica
 |---|---|
 | model/parameters.json | 90a3bf95c9c51ea407ae1d749b481795733e88c083c07415ed0f58f916c6cc7a |
 | blender/kysucka_chata_mcp_v01.blend | 227edd9356a0e2917486351bce6e6fdbb62c58eacbfbb96101c1872d5235e4a8 |
+
+Current MCP v02 SHA-256 values (the initialization and v01 values above remain historical):
+
+| File | SHA-256 |
+|---|---|
+| model/parameters.json | 2d441b08d658e4aa4c8fccc5e71c76eb16666deeb4401cdd0b973c379901cada |
+| blender/kysucka_chata_mcp_v02.blend | 010f47a81a4fde2e936f401e87b8bc11af76a8e72d71811d68dd910da0b27249 |
 
 Preserve reference/, blender/, model/, scripts/, cad/, docs/*.pdf, previews/,
 manifest/*.sha256, requirements-docs.txt, and tools/ during initialization.
@@ -96,6 +105,14 @@ existing MCP tools control the live GUI for reads, owner checkpoints, working-co
 saves, the camera shift, renders, readback, and camera/scene-world display.
 The active working file is `blender/kysucka_chata_mcp_v01.blend`; the seed remains
 preserved. This bounded deviation grants no future mutations or installations.
+
+For `kysucka-moderna-chata-reference-camera-perspective`, its explicit
+implementation grant reactivates `blender-mcp-live-v1` for the three-candidate
+camera comparison and v02 save. The current working file is
+`blender/kysucka_chata_mcp_v02.blend`; seed and v01 remain preserved. Only camera
+perspective changed; non-camera geometry, materials, glass, world, lights and
+landscape remain unchanged. This task-specific route grants no future mutations
+or installations.
 
 Before an operation, verify the physical Git root, canonical project origin,
 the exact commit required by the current grant, permitted working-tree state,
