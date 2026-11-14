@@ -1,0 +1,103 @@
+{
+  "blender": "4.3.2",
+  "passed": true,
+  "checks": [
+    {
+      "claim": "metric units",
+      "pass": true,
+      "observed": [
+        "METRIC",
+        1.0
+      ]
+    },
+    {
+      "claim": "main footprint vs shared JSON",
+      "pass": true,
+      "observed": [
+        14.399999618530273,
+        8.399999618530273,
+        0.25
+      ]
+    },
+    {
+      "claim": "floor datum vs slab top",
+      "pass": true,
+      "observed": 0.44999998807907104
+    },
+    {
+      "claim": "camera location vs shared JSON",
+      "pass": true,
+      "observed": [
+        27.5,
+        -15.5,
+        1.7000000476837158
+      ]
+    },
+    {
+      "claim": "camera optics vs shared JSON",
+      "pass": true,
+      "observed": [
+        50.0,
+        0.17000000178813934
+      ]
+    },
+    {
+      "claim": "target image aspect",
+      "pass": true,
+      "observed": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "claim": "lower glazing vs shared JSON",
+      "pass": true,
+      "observed": [
+        0.019999999552965164,
+        8.100000381469727,
+        2.7300000190734863
+      ]
+    },
+    {
+      "claim": "stone pier clearance under roof",
+      "pass": true,
+      "observed": [
+        2.899999976158142,
+        2.899999976158142
+      ]
+    },
+    {
+      "claim": "reference packed and source identical",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "claim": "no missing external image",
+      "pass": true,
+      "observed": []
+    },
+    {
+      "claim": "no project auto-run; only factory built-in handler",
+      "pass": true,
+      "observed": {
+        "handlers": {
+          "load_post": [
+            [
+              "pose_library.gui",
+              "_on_blendfile_load_post"
+            ]
+          ],
+          "save_pre": [],
+          "render_pre": []
+        },
+        "auto_text": [],
+        "drivers": 0
+      }
+    },
+    {
+      "claim": "all mesh coordinates finite",
+      "pass": true,
+      "observed": 656
+    }
+  ]
+}

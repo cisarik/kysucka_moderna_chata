@@ -1,0 +1,121 @@
+{
+  "source": "reference/kysucka_chata_moderna.png",
+  "image_size_px": [
+    1448,
+    1086
+  ],
+  "status": "approximate manual annotation, not accepted image registration",
+  "origin": "top-left",
+  "uncertainty_px": 15,
+  "warning": "Some semantic correspondences are ambiguous; do not distort a coherent model to force all points. Reannotate with evidence before a strict calibration gate.",
+  "landmarks": [
+    {
+      "id": "gable_peak",
+      "px": [
+        1246,
+        95
+      ],
+      "uv": [
+        0.860497,
+        0.087477
+      ],
+      "description": "roof gable outer apex"
+    },
+    {
+      "id": "left_front_eave",
+      "px": [
+        173,
+        636
+      ],
+      "uv": [
+        0.119475,
+        0.585635
+      ],
+      "description": "left near eave edge; endpoint is partly hidden"
+    },
+    {
+      "id": "gable_front_eave",
+      "px": [
+        940,
+        477
+      ],
+      "uv": [
+        0.649171,
+        0.439227
+      ],
+      "description": "near eave/gable junction; interpretation uncertain"
+    },
+    {
+      "id": "entry_bottom",
+      "px": [
+        714,
+        774
+      ],
+      "uv": [
+        0.493094,
+        0.712707
+      ],
+      "description": "entry door bottom midpoint"
+    },
+    {
+      "id": "entry_top",
+      "px": [
+        713,
+        555
+      ],
+      "uv": [
+        0.492403,
+        0.51105
+      ],
+      "description": "entry door top midpoint"
+    },
+    {
+      "id": "front_window_center",
+      "px": [
+        520,
+        649
+      ],
+      "uv": [
+        0.359116,
+        0.597606
+      ],
+      "description": "front window image center"
+    },
+    {
+      "id": "gable_near_base",
+      "px": [
+        1013,
+        749
+      ],
+      "uv": [
+        0.699586,
+        0.689687
+      ],
+      "description": "near bottom of glazed gable"
+    },
+    {
+      "id": "gable_far_base",
+      "px": [
+        1398,
+        743
+      ],
+      "uv": [
+        0.96547,
+        0.684162
+      ],
+      "description": "far bottom of glazed gable"
+    },
+    {
+      "id": "chimney_top",
+      "px": [
+        945,
+        108
+      ],
+      "uv": [
+        0.652624,
+        0.099448
+      ],
+      "description": "chimney cap midpoint"
+    }
+  ]
+}

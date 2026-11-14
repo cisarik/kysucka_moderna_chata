@@ -1,0 +1,369 @@
+{
+  "schema": "kysucka-chata-seed-1",
+  "revision": "S00",
+  "status": "visualization hypothesis; not measured; not approved architectural design",
+  "units": "metres",
+  "axes": {
+    "X": "length, wood bay to glazed gable",
+    "Y": "entrance facade to rear facade",
+    "Z": "up; local ground datum 0"
+  },
+  "building": {
+    "length": 14.4,
+    "width": 8.4,
+    "wood_bay_length": 2.4,
+    "wall_thickness": 0.3,
+    "partition_thickness": 0.15,
+    "floor_z": 0.45,
+    "slab_bottom_z": 0.2,
+    "wall_plate_z": 3.25,
+    "ridge_z": 7.45,
+    "roof_eave_overhang": 0.85,
+    "roof_gable_overhang": 0.55,
+    "roof_visual_thickness": 0.16,
+    "roof_tile_course": 0.4,
+    "roof_tile_width": 0.65,
+    "chimney": {
+      "x": 11.3,
+      "y": 3.2,
+      "width": 0.8,
+      "depth": 0.8,
+      "top_z": 8.45
+    },
+    "gable_glass_base_top_z": 3.18,
+    "mullion_width": 0.075,
+    "gable_glass_y_min": 0.15,
+    "gable_glass_y_max": 8.25,
+    "gable_upper_glass_y_min": 1.35,
+    "gable_upper_glass_y_max": 7.05,
+    "gable_mullions_y": [
+      0.15,
+      2.175,
+      4.2,
+      6.225,
+      8.25
+    ],
+    "entry_stone_top_z": 2.9
+  },
+  "openings": [
+    {
+      "id": "D01",
+      "side": "front",
+      "start": 7.25,
+      "width": 1.25,
+      "sill": 0.0,
+      "height": 2.3,
+      "status": "estimated",
+      "name": "Vstupne dvere"
+    },
+    {
+      "id": "W01",
+      "side": "front",
+      "start": 4.15,
+      "width": 2.0,
+      "sill": 0.9,
+      "height": 1.15,
+      "status": "estimated",
+      "name": "Pozdlzne okno"
+    },
+    {
+      "id": "W02",
+      "side": "rear",
+      "start": 3.45,
+      "width": 1.4,
+      "sill": 0.9,
+      "height": 1.2,
+      "status": "proposed",
+      "name": "Izba 1"
+    },
+    {
+      "id": "W03",
+      "side": "rear",
+      "start": 6.55,
+      "width": 1.4,
+      "sill": 0.9,
+      "height": 1.2,
+      "status": "proposed",
+      "name": "Izba 2"
+    },
+    {
+      "id": "W04",
+      "side": "rear",
+      "start": 10.4,
+      "width": 1.8,
+      "sill": 1.1,
+      "height": 1.1,
+      "status": "proposed",
+      "name": "Kuchyna"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "01",
+      "name": "Zadverie",
+      "rect": [
+        6.8,
+        0.3,
+        8.65,
+        3.2
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "02",
+      "name": "Technicka miestnost",
+      "rect": [
+        5.3,
+        0.3,
+        6.65,
+        3.2
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "03",
+      "name": "Kupelna / WC",
+      "rect": [
+        2.7,
+        0.3,
+        5.15,
+        3.2
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "04",
+      "name": "Chodba",
+      "rect": [
+        2.7,
+        3.35,
+        8.65,
+        4.5
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "05",
+      "name": "Izba 1",
+      "rect": [
+        2.7,
+        4.65,
+        5.65,
+        8.1
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "06",
+      "name": "Izba 2",
+      "rect": [
+        5.8,
+        4.65,
+        8.65,
+        8.1
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "07",
+      "name": "Obyvacka / jedalen / kuchyna",
+      "rect": [
+        8.8,
+        0.3,
+        14.1,
+        8.1
+      ],
+      "status": "proposed"
+    }
+  ],
+  "partitions": [
+    [
+      5.15,
+      0.3,
+      5.3,
+      3.2
+    ],
+    [
+      6.65,
+      0.3,
+      6.8,
+      3.2
+    ],
+    [
+      2.7,
+      3.2,
+      4.1,
+      3.35
+    ],
+    [
+      5.0,
+      3.2,
+      5.45,
+      3.35
+    ],
+    [
+      6.25,
+      3.2,
+      7.1,
+      3.35
+    ],
+    [
+      8.2,
+      3.2,
+      8.65,
+      3.35
+    ],
+    [
+      2.7,
+      4.5,
+      4.4,
+      4.65
+    ],
+    [
+      5.3,
+      4.5,
+      6.65,
+      4.65
+    ],
+    [
+      7.55,
+      4.5,
+      8.65,
+      4.65
+    ],
+    [
+      5.65,
+      4.65,
+      5.8,
+      8.1
+    ],
+    [
+      8.65,
+      0.3,
+      8.8,
+      3.35
+    ],
+    [
+      8.65,
+      4.5,
+      8.8,
+      8.1
+    ]
+  ],
+  "interior_doors": [
+    {
+      "id": "D02",
+      "x": 4.1,
+      "y": 3.2,
+      "width": 0.9,
+      "swing": -1
+    },
+    {
+      "id": "D03",
+      "x": 5.45,
+      "y": 3.2,
+      "width": 0.8,
+      "swing": -1
+    },
+    {
+      "id": "D04",
+      "x": 7.1,
+      "y": 3.2,
+      "width": 1.1,
+      "swing": -1
+    },
+    {
+      "id": "D05",
+      "x": 4.4,
+      "y": 4.65,
+      "width": 0.9,
+      "swing": 1
+    },
+    {
+      "id": "D06",
+      "x": 6.65,
+      "y": 4.65,
+      "width": 0.9,
+      "swing": 1
+    }
+  ],
+  "camera": {
+    "name": "CAM_A_REFERENCE",
+    "location": [
+      27.5,
+      -15.5,
+      1.7
+    ],
+    "target": [
+      7.45,
+      3.15,
+      1.7
+    ],
+    "lens_mm": 50,
+    "sensor_width_mm": 36.0,
+    "resolution": [
+      1448,
+      1086
+    ],
+    "status": "initial perspective estimate; calibration not accepted",
+    "shift_y": 0.17
+  },
+  "materials": [
+    {
+      "id": "MAT_WOOD_H",
+      "label": "Teple vodorovne drevo",
+      "color": "#986538",
+      "roughness": 0.48,
+      "status": "procedural stand-in"
+    },
+    {
+      "id": "MAT_WOOD_V",
+      "label": "Zvisle drevo stitu / podhladu",
+      "color": "#b7834b",
+      "roughness": 0.48,
+      "status": "procedural stand-in"
+    },
+    {
+      "id": "MAT_ROOF",
+      "label": "Tmava skladana strecha",
+      "color": "#353e47",
+      "roughness": 0.36,
+      "status": "visual sheet / slate hypothesis"
+    },
+    {
+      "id": "MAT_STONE",
+      "label": "Svetly kamen",
+      "color": "#b8b1a0",
+      "roughness": 0.78,
+      "status": "procedural stand-in"
+    },
+    {
+      "id": "MAT_FRAME",
+      "label": "Antracitove ramy",
+      "color": "#252725",
+      "roughness": 0.3,
+      "status": "procedural stand-in"
+    },
+    {
+      "id": "MAT_GLASS",
+      "label": "Cire sklo",
+      "color": "#c6dee0",
+      "roughness": 0.07,
+      "status": "single pane visual model"
+    },
+    {
+      "id": "MAT_CONCRETE",
+      "label": "Svetly beton / dlazba",
+      "color": "#b2afa5",
+      "roughness": 0.8,
+      "status": "procedural stand-in"
+    },
+    {
+      "id": "MAT_LED",
+      "label": "Teple linearne svetlo",
+      "color": "#ffb45c",
+      "roughness": 0.4,
+      "status": "artistic approximation 2700 K appearance"
+    }
+  ]
+}

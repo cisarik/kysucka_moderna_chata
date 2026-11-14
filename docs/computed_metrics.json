@@ -1,0 +1,45 @@
+{
+  "gross_total": 120.96000000000001,
+  "gross_enclosed": 100.80000000000001,
+  "covered_bay": 20.16,
+  "net_rooms": 84.57600000000001,
+  "roof_angle": 45.0,
+  "roof_area": 221.39513318950802,
+  "rooms": [
+    [
+      "01",
+      "Zadverie",
+      5.365
+    ],
+    [
+      "02",
+      "Technicka miestnost",
+      3.915
+    ],
+    [
+      "03",
+      "Kupelna / WC",
+      7.105
+    ],
+    [
+      "04",
+      "Chodba",
+      6.842
+    ],
+    [
+      "05",
+      "Izba 1",
+      10.177
+    ],
+    [
+      "06",
+      "Izba 2",
+      9.832
+    ],
+    [
+      "07",
+      "Obyvacka / jedalen / kuchyna",
+      41.34
+    ]
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "pdf_pages": 21,
+  "page_size": "A3 landscape",
+  "pdf_text_checks": "pass",
+  "dxf": [
+    {
+      "file": "02_suradnice.dxf",
+      "entities": 43,
+      "units": "mm",
+      "audit_errors": 0
+    },
+    {
+      "file": "03_podorys.dxf",
+      "entities": 160,
+      "units": "mm",
+      "audit_errors": 0
+    },
+    {
+      "file": "04_dispozicna_studia.dxf",
+      "entities": 105,
+      "units": "mm",
+      "audit_errors": 0
+    },
+    {
+      "file": "05_strecha.dxf",
+      "entities": 34,
+      "units": "mm",
+      "audit_errors": 0
+    },
+    {
+      "file": "06_vstupna_fasada.dxf",
+      "entities": 59,
+      "units": "mm",
+      "audit_errors": 0
+    },
+    {
+      "file": "07_preskleny_stit.dxf",
+      "entities": 31,
+      "units": "mm",
+      "audit_errors": 0
+    },
+    {
+      "file": "08_zadna_fasada.dxf",
+      "entities": 55,
+      "units": "mm",
+      "audit_errors": 0
+    },
+    {
+      "file": "09_opacny_stit.dxf",
+      "entities": 23,
+      "units": "mm",
+      "audit_errors": 0
+    },
+    {
+      "file": "10_priecny_rez.dxf",
+      "entities": 41,
+      "units": "mm",
+      "audit_errors": 0
+    },
+    {
+      "file": "11_pozdlzny_rez.dxf",
+      "entities": 30,
+      "units": "mm",
+      "audit_errors": 0
+    },
+    {
+      "file": "13_detail_okapu.dxf",
+      "entities": 15,
+      "units": "mm",
+      "audit_errors": 0
+    },
+    {
+      "file": "14_detail_vstupu.dxf",
+      "entities": 23,
+      "units": "mm",
+      "audit_errors": 0
+    },
+    {
+      "file": "16_kompozicna_situacia.dxf",
+      "entities": 18,
+      "units": "mm",
+      "audit_errors": 0
+    },
+    {
+      "file": "Kysucka_chata_S00_all_views.dxf",
+      "entities": 650,
+      "units": "mm",
+      "audit_errors": 0
+    }
+  ],
+  "svg_count": 13
+}
