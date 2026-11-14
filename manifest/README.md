@@ -1,14 +1,16 @@
-# Integrity inventories
+# Historical S00 integrity inventories
 
-`seed_files.sha256` identifies exact non-Git S00 source/deliverable bytes.
-It excludes manifest/, handoff/, work/, caches and backup files to avoid
-self-reference and allow the separately granted first report to be written.
-The first Planner binds the SHA-256 of this inventory itself and the .blend.
+Both seed_files.sha256 and delivery_files.sha256 are retained inventories
+of the original non-Git S00 package. They can name files absent from the
+reduced Git repository and are not current task prerequisites.
 
-`delivery_files.sha256` additionally covers the prepared first prompt and
-seed inventory. It excludes only itself, temporary work, caches and backups.
+seed_files.sha256 records the original source/deliverable selection.
+delivery_files.sha256 additionally records the original delivery selection,
+including its prepared bootstrap material.
 
-Format: SHA-256, two spaces, relative POSIX path. Compute file hashes with
-Python's standard library or a suitable local SHA-256 tool, without writing
-into the project. These inventories prove bytes, not Git commit identity,
-public branch state, delivery to a Worker or owner acceptance.
+Do not rewrite their hashes to describe a later tree. Current identity uses
+the exact Git commit/tree and the protected source-byte hashes specified by
+AGENTS.md and the current grant.
+
+Format: SHA-256, two spaces, relative POSIX path. Read-only recounting is
+historical analysis, not proof of current publication, delivery, or acceptance.

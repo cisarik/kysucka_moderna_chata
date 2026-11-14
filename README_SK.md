@@ -1,4 +1,4 @@
-# Kysucká chata - štartovací balík S00
+# Kysucká moderná chata — vizualizačný projekt
 
 Michal, toto je samostatný pracovný začiatok vizualizácie podľa obrázka.
 Model je pripravený na otvorenie a postupné zlepšovanie; hotová vizualizácia
@@ -6,21 +6,23 @@ ani architektonické preverenie sa zatiaľ netvrdia.
 
 ## Začni tu
 
-1. Rozbaľ celý ZIP do nového vlastného priečinka. Zachovaj vnútornú štruktúru.
-2. V Blenderi otvor **blender/kysucka_chata_seed.blend**. Referenčný obrázok je
-   zabalený aj v súbore. Python auto-run ani add-on netreba povoľovať.
-3. V Cursori otvor ako projekt tento rozbalený priečinok, nie samotný .blend.
-4. Vytvor nový Worker chat a zapni skutočný **Plan Mode**. Model vyber v Cursori;
-   pre prvú plánovaciu úlohu odporúčam Medium, bez maximum/enhanced režimu.
-5. Celý obsah **handoff/kysucka-chata-workstation-bootstrap-and-camera-baseline/01_planning.md**
-   vlož do tohto nového chatu. Je to iba plánovací prompt, nie povolenie model meniť.
-6. Pošli Chat Orchestratorovi kompletný `01_report.md` (alebo kompletný výstup,
-   ak ho klient nevie uložiť). Potom vznikne osobitný realizačný prompt.
-   Tlačidlo Build ani súhlas s plánom samo osebe ďalšiu prácu nepovoľuje.
-
-Pred prvým doručením súradnice promptu ešte nie sú spotrebované. Ten istý prompt
-nevkladaj do viacerých chatov. Ak sa niečo zastaví, vráť správu Orchestratorovi;
-nové číslo relácie nevymýšľaj sám.
+1. Pracuj v Git repozitári https://github.com/cisarik/kysucka_moderna_chata.
+   Pri novom klone použi --recurse-submodules; po bežnom klone inicializuj
+   prijatý submodul príkazom git submodule update --init --recursive.
+2. Prečítaj AGENTS.md a docs/VISUAL_BRIEF.md. Aktuálny celok koordinuje jeho
+   Orchestrator; Master koordinuje vývojový beh. Starý prompt sa z histórie
+   nevykonáva ako nové povolenie.
+3. Vizuálny cieľ je reference/kysucka_chata_moderna.png. Zachovaný počiatočný
+   model je blender/kysucka_chata_seed.blend; referencia je v ňom zabalená.
+   Python auto-run ani add-on nie sú potrebné.
+4. Michal doručuje aktuálne úplné prompty manuálne do určenej relácie.
+   Režim a súradnice určuje grant. Súhlas s plánom ani tlačidlo Build
+   neposkytujú realizačné povolenie.
+5. Prompty a správy patria do externého cisarik/meta podľa AGENTS.md.
+   Worker uloží vlastnú správu len s povolením a dostupnou schopnosťou;
+   pri obmedzení klienta vráti úplný výstup a uvedie chýbajúce uloženie.
+6. Inicializačný celok zavádza AP/Meta bez úpravy vizualizácie. Prácu na
+   kanonickom renderi, kamere alebo siluete musí vybrať a povoliť ďalší celok.
 
 ## Obsah
 
@@ -36,11 +38,11 @@ nové číslo relácie nevymýšľaj sám.
 | model/reference_landmarks.json | ručne orientačne označené body referencie, s neistotou |
 | scripts/ | znovuvytvorenie CAD/PDF a scény; iba s aktuálnym povolením úprav |
 | docs/OPERATIONS.md | lokálna cesta ovládania Blenderu; CLI bez MCP |
-| protocol/ | presný overený AP snapshot; nie inicializovaný .ap gitlink |
-| AGENTS.md | projektové pravidlá pre Cursor Workera |
-| handoff/.../01_planning.md | prvý kompletný plánovací prompt v angličtine |
-| prompts/RESTORE_CHAT_ORCHESTRATOR.md | obnova read-only Chat Orchestratora pri pokračovaní |
-| manifest/ | kontrolné súčty seed podkladov a celého dodania |
+| .ap/, .gitmodules | prijatý nemenný AP submodul; presný commit určuje gitlink |
+| AGENTS.md | aktuálne projektové pravidlá a vlastníci zdrojov |
+| reference/kysucka_chata_moderna.png | zachovaný vizuálny cieľ |
+| manifest/ | historické inventáre pôvodného S00 balíka, nie aktuálne Git brány |
+| externý cisarik/meta | historické prompty, správy, poznámky a odovzdanie celku |
 
 ## Čo je isté a čo je odhad
 
@@ -67,20 +69,11 @@ nemajú inštalovať len preto, že je otvorený Blender.
 ## Dôležité pre ďalšiu prácu
 
 - Pôvodný seed si zachovaj. Budúce verzie nech vznikajú ako pomenované kópie.
-- Workeri môžu použiť lokálny Blender cez príkazový riadok; MCP je voliteľný.
+- Worker používa deklarovanú cestu blender-local-v1 v docs/OPERATIONS.md; iná cesta vyžaduje konkrétny grant.
 - Nepracuj súčasne ručne aj Workerom na tom istom súbore. GUI po externom
   uložení potrebuje bezpečné opätovné načítanie.
 - Ručná úprava .blend nemení JSON a generátor; pred regeneráciou sa musí
   zosúladiť, ktorá verzia je prijatá.
 - Stromy, kvety a nábytok sú zámerné náhrady. Prvé prijatie má sledovať
   kameru a siluetu, nie kvalitu botanických detailov.
-- Toto ešte nie je Git repository ani AP offline bundle. Repo URL a publikovanie
-  nie sú vybrané; žiadna Git mutácia nie je prvým promptom povolená.
-
-🟡 **Pripravené na manuálne doručenie**
-
-Príjemca: Planner · nový Worker chat · Cursor. Odporúčanie: Medium a približne
-250k kontext, ak je dostupný; nejde o tvrdenie o skutočnej kapacite klienta.
-Native Plan Mode: **ON**. Prompt: `handoff/kysucka-chata-workstation-bootstrap-and-camera-baseline/01_planning.md`.
-Správa: rovnaký priečinok, `01_report.md`. Archivácia: čakať na skutočnú správu.
-Model volíš ty; Worker rozlíši žiadaný a skutočne pozorovateľný model.
+- Projekt je Git repozitár s kanonickým originom uvedeným vyššie. Lokálny commit, verejné publikovanie a prijatie sú samostatné tvrdenia, ktoré sa overujú pri konkrétnej úlohe.

@@ -8,18 +8,15 @@ ani geometrickým dôkazom reálneho domu. Balík nepridáva nové tvrdenie o je
 
 ## Analytic Programming
 
-- Používateľom určený kanonický zdroj: https://github.com/cisarik/ap
-- Overený commit: https://github.com/cisarik/ap/commit/d7023cf037f6d17885c3ede5c04812c61640da50
-- Pozorovanie 13. 11. 2026: oficiálne GitHub API commits/main; následne
-  súbory z nemenného raw SHA. Každý priložený Git blob bol porovnaný
-  so SHA v stromovom objekte. Záznam: protocol/SOURCE.json.
-- AP.md je sémantický vlastník. AP_ORCHESTRATOR.md a AP_WORKER.md sú
-  prevádzkové projekcie; PROMPT_CONTRACTS.md určuje presný tvar metadát.
-- Čítaná bola chrbtica Orchestratora, pravidlá plánovania, mutačné osi,
-  doručenie správ, zdroje dôkazov, životný cyklus a prvý Planner.
-- Snapshot nie je `.ap` submodul, Git transport ani stav Michalovho pracoviska.
-  Obsah AP sa v balíku neupravuje. Internetové vyhľadávanie našlo aj starý
-  repozitár analytic_programming; ten nebol použitý ako aktuálny protokol.
+- Kanonický zdroj: https://github.com/cisarik/ap
+- Distribúcia projektu: Git submodul .ap s URL https://github.com/cisarik/ap.git.
+- Prijatý nemenný commit:
+  https://github.com/cisarik/ap/commit/d7023cf037f6d17885c3ede5c04812c61640da50
+- Presnú prijatú verziu určuje gitlink .ap; checkout musí zodpovedať gitlinku.
+- .ap/AP.md vlastní sémantiku. .ap/AP_ORCHESTRATOR.md a .ap/AP_WORKER.md
+  sú prevádzkové projekcie; .ap/PROMPT_CONTRACTS.md určuje presné metadáta.
+- Projektové pravidlá sú mimo spravovaného bloku v AGENTS.md.
+  .ap sa pri bežnej práci nemení; aktualizácia vyžaduje osobitný grant.
 
 ## Blender
 

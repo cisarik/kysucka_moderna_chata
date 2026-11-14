@@ -5,12 +5,16 @@ prompt. Nasledujúce príkazy sú možnosti nástroja, nie trvalé povolenie úp
 
 ## Read-only local inspection
 
-Identita schopnostnej cesty: **blender-local-v1**. Prvý Planner ju musí použiť
-ako kanonickú cestu lokálneho pozorovania, ak je dostupná. Nevyžaduje MCP.
+Identita schopnostnej cesty: blender-local-v1. Aktuálny grant ju aktivuje ako kanonickú cestu lokálneho pozorovania; nevyžaduje MCP.
 
-1. Pracovný koreň je priečinok otvorený v Cursori, ktorý obsahuje AGENTS.md,
-   model/parameters.json a manifest/seed_files.sha256. Overiť fyzickú cestu.
-2. Overiť manifest iba čítaním štandardnou knižnicou Python; nevytvárať cache.
+1. Over fyzický Git koreň pomocou git rev-parse --show-toplevel, kanonický
+   origin https://github.com/cisarik/kysucka_moderna_chata, presný commit
+   uvedený aktuálnym grantom a povolený stav indexu/pracovného stromu.
+   Inicializačný baseline je bc510eb063f96d7cedad49aaaca6f58b54a51fd2;
+   ďalšie granty musia pomenovať svoj aktuálny presný baseline.
+2. Pred otvorením scény over presnú vstupnú cestu a príslušné zdrojové
+   SHA-256 z AGENTS.md alebo aktuálneho grantu. Historické inventáre
+   manifest/*.sha256 nie sú aktuálnou identitnou bránou.
 3. Nájsť Blender bez inštalácie: pozorovaný program `blender` v PATH alebo
    existujúci macOS program `/Applications/Blender.app/Contents/MacOS/Blender`.
 4. Zavolať jeho `--version`. Potom sa dá iba čítať scéna takto, so skutočnými
@@ -31,6 +35,14 @@ rovnaký handler `pose_library.gui._on_blendfile_load_post` prítomný aj v čis
 factory scéne. Samotný počet 1 preto nie je projektový auto-run. S00 má nulové
 automatické textové moduly a nulové objektové drivery; zdroj sa porovnal s čistým
 spustením. Pri inom lokálnom náleze treba pôvod overiť, nie ho ignorovať.
+
+Pozorovanie 14. 11. 2026: deklarovaná read-only kontrola seedu úspešne
+dobehla v /Applications/Blender.app/Contents/MacOS/Blender, verzia 5.2.3 LTS.
+Pôvod seedu ostáva Blender 4.3.2. Proces pri štarte vypísal registráciu
+existujúceho BlenderMCP add-onu; load_post=3, save_pre=0, render_pre=0.
+Pôvod handlerov tento skript neurčuje. Historický počet 1 sa nepovažuje
+za aktuálne overenie. Doplnky sa neinštalovali ani neupravovali.
+Engine, zariadenie a nový render neboli touto kontrolou overené.
 
 ## Zostavenie a render - iba s budúcim povolením
 

@@ -1,14 +1,12 @@
 # Vizuálny zámer S00
 
-Vzťah k AP: projektový obsah; univerzálny význam protokolu vlastní iba AP.md
-na pine uvedenom v AGENTS.md. Klasifikácia a životný cyklus: ARTIFACT_LIFECYCLE.md.
+Vzťah k AP: projektový vizuálny zámer. Univerzálnu sémantiku vlastní .ap/AP.md na commite zaznamenanom gitlinkom .ap; prijatý pin je d7023cf037f6d17885c3ede5c04812c61640da50. Projektové pravidlá sú v AGENTS.md; životný cyklus v ARTIFACT_LIFECYCLE.md. Meta je historický dôkaz, nie aktuálne povolenie.
 
 ## Prijaté rozhodnutia Michala
 
 1. Vytvoriť čo najvernejšiu 3D vizualizáciu podľa dodaného obrázka, postupne
-   cez ohraničené úlohy pre Workerov v Cursor IDE.
-2. Chat Orchestrator ostáva read-only voči jeho pracovisku; prvý ZIP je osobitne
-   vyžiadaný štartovací podklad. Nejde o dokončený model.
+   cez ohraničené úlohy Workerov v klientovi zvolenom Michalom.
+2. Master Orchestrator koordinuje vývojový beh; Orchestrator aktuálneho celku koordinuje jeho plán, granty, prijatie a uzavretie. Worker koná iba podľa aktuálneho úplného grantu. S00 je počiatočný podklad, nie dokončený model.
 3. Architektovi zatiaľ nič neposielať ani nežiadať kontrolu. K prípadnej
    architektonickej fáze sa vrátiť až po veľmi dobrej vizualizácii.
 4. Dodať PDF schémy, upraviteľný CAD a reálny otvárateľný Blender projekt.
@@ -39,10 +37,7 @@ Plochy sú geometrické súčty obdĺžnikov, nie normové výpočty.
 
 ## Úvodný rozsah a ďalšie možnosti
 
-Prvý plánovací celok: lokálne otvorenie, kontrola ovládania Blenderu a
-bezpečný plán prvého zosúladenia kamery / siluety. Bez sťahovania aktív,
-inštalácií a úprav referencie. Nasledovať môže tvar, materiály, interiér,
-svetlo, prostredie a finálny obraz. Toto poradie nie je povolenie implementácie.
+Aktuálny inicializačný celok zavádza pripnuté AP, projektové pravidlá a externú Meta stopu bez zmeny scény. Po jeho uzavretí môže Master odporučiť samostatný celok kanonického renderu a kamery; vyberá ho Michal. Toto nie je povolenie vizuálnych úprav.
 
 Pôvodný obrázok má nezmeranú perspektívu a môže obsahovať nejednoznačnú
 geometriu alebo odrazy. Pri konflikte má prednosť ucelený prijatý model;
