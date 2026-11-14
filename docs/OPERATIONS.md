@@ -44,7 +44,7 @@ Pôvod handlerov tento skript neurčuje. Historický počet 1 sa nepovažuje
 za aktuálne overenie. Doplnky sa neinštalovali ani neupravovali.
 Engine, zariadenie a nový render neboli touto kontrolou overené.
 
-## Živé ovládanie cez MCP — v01 a aktuálna v02
+## Živé ovládanie cez MCP — v01, v02 a aktuálna v03
 
 Cesta `blender-mcp-live-v1` je konkrétnym grantom aktivovaná výnimka pre celok
 `kysucka-moderna-chata-blender-mcp-first-reference-render`. Používa existujúce
@@ -75,7 +75,7 @@ zosúladiť prijatú verziu scény a zdrojov. V01 je pracovný kandidát na vizu
 Pre celok `kysucka-moderna-chata-reference-camera-perspective` konkrétny
 realizačný grant znovu aktivoval `blender-mcp-live-v1`. Z nezmenenej v01
 sa porovnali tri kamery pri Cycles CPU, 640 × 480 a 32 vzorkách.
-Aktuálna pracovná scéna je `blender/kysucka_chata_mcp_v02.blend`: kamera
+Výsledná pracovná scéna bola `blender/kysucka_chata_mcp_v02.blend`: kamera
 `CAM_A_REFERENCE` má polohu `[21.5, -10.0, 1.25]`, cieľ `[8.5, 2.5, 1.25]`,
 ohnisko 35 mm, snímač 36 mm, shift_x = 0 a shift_y = 0.105. JSON obsahuje
 rovnaké hodnoty; orientáciu už počíta existujúci generátor. Geometria,
@@ -87,6 +87,39 @@ a svetom scény a 16 vzorkami náhľadu. Samostatné otvorenie bez okna použív
 Solid; kameru a uložené renderovacie nastavenia overuje bez renderovania.
 Rendery a merania sú v externom Meta celku `00/02-reference-camera-perspective/`.
 Vizuálne prijatie zostáva otvorené. Tento opis neudeľuje ďalšie oprávnenie úprav.
+
+## V03 — PBR drevo a plot v popredí
+
+Konkrétny grant celku `kysucka-moderna-chata-realistic-timber-and-foreground-fence`
+aktivoval `blender-mcp-live-v1` pre úpravu dreva a plota. Aktuálny súbor je
+`blender/kysucka_chata_mcp_v03.blend`; kamera zostáva totožná s v02.
+
+- `MAT_TIMBER_EXTERIOR` používa `coated_pine_02` na 89 exteriérových objektoch;
+  `MAT_TIMBER_FENCE` používa `rough_wood` na 26 stĺpikoch a dvoch priečkach.
+  Pôvodné materiály zostali zachované na nábytku, stromoch a dekorácii.
+- Šesť CC0 JPG má 2K rozlíšenie; pôvod, smer vlákien, mierku a kontrolné súčty
+  uvádza `assets/ASSET_MANIFEST.md`. V03 obsahuje zabalené mapy aj referenciu,
+  pričom zachováva cesty `//../assets/textures/wood/...`.
+- `model/parameters.json` obsahuje `exterior_timber`, `fence_timber` a
+  `foreground_fence`. Funkcia `apply_v03` v `scripts/timber_fence_v03.py` vykoná
+  rovnakú úpravu cez MCP aj zo zdrojového generátora a nemení globálny RNG.
+  Pôvodných 26 náhodných ťahov starého plota zostáva pred tvorbou stromov.
+- Plot vedie z `(16.60,-8.62)` do `(18.25,1.00)`; nohy sú zapustené do terénu.
+  Zvolený prvý variant pretína celý spodný okraj záberu bez zmeny terénu či kamery.
+- Porovnanie pred/po používa 1448 × 1086, 100 %, Cycles CPU, 96 vzoriek,
+  OpenImageDenoise zapnuté, snímku/seed 0, AgX/None, expozíciu 0 a gamma 1.
+  Rovnaké nastavenie v03 zostáva uložené; výstup je `//../work/camera_a.png`.
+  Layout má CAMERA + RENDERED, svetlá/svet scény a 16 vzoriek náhľadu.
+- Kontrolný bod je `work/mcp-v03-before.blend`; overenie zdrojov vytvára iba
+  `work/v03_source_replay.blend` v oddelenom CLI procese. Pri budúcom opakovaní
+  treba nové konkrétne povolenie aj kontrolu kolízií výstupov.
+
+`configure_comparison_render` v rovnakom module nastavuje profil v03.
+Starší `scripts/render_scene.py` ponecháva odšumovanie vypnuté, a preto neslúži
+na toto porovnanie. Príkaz na cold kontrolu používa existujúci Blender s
+`--background --disable-autoexec` a `scripts/inspect_scene.py`; nič neukladá.
+Zdrojové zostavenie používa `scripts/build_scene.py -- --output <nový-pracovný-súbor>`.
+Rendery, výrezy a technické overenia patria do externého Meta celku `00/03-realistic-timber-and-foreground-fence/`.
 
 ## Zostavenie a render - iba s budúcim povolením
 
@@ -103,9 +136,9 @@ a nič neinštalujú. Nemajú oprávnenie samy od seba meniť seed.
 
 ## Bežné otvorenie bez terminálu
 
-V Blenderi: File → Open → `blender/kysucka_chata_mcp_v02.blend`. Zachované sú
-`blender/kysucka_chata_mcp_v01.blend` a seed `blender/kysucka_chata_seed.blend`.
-V02 má nastavený kamerový pohľad Cycles
+V Blenderi: File → Open → `blender/kysucka_chata_mcp_v03.blend`. Zachované sú
+v02, v01 a seed `blender/kysucka_chata_seed.blend`.
+V03 má nastavený kamerový pohľad Cycles
 so svetlami a svetom scény. Na notebooku možno použiť View → Cameras → Active Camera.
 F12 spustí render; pri dodanom rozlíšení môže na CPU trvať výrazne dlhšie
 než malý náhľad. Režim Solid je vhodný na rýchlu geometriu, Material Preview
@@ -118,11 +151,11 @@ Workerom na tom istom .blend. Každý prijatý výsledok má konkrétny súbor a
 
 ## Výkon a prenosnosť
 
-Seed vznikol v Blenderi 4.3.2. Testovací build nemá OpenImageDenoise, preto je
-odšumovanie vypnuté a náhľad môže byť zrnitý. Toto nie je vlastnosť modelu.
+Seed vznikol v Blenderi 4.3.2; jeho historický testovací build nemal OpenImageDenoise.
+Aktuálna v03 používa Blender 5.2.3 LTS a zapnuté OpenImageDenoise na CPU.
 Oficiálny lokálny Blender môže ponúkať Metal alebo CUDA/OptiX; musí sa to
 overiť v Preferences → System. Nezamieňať nastavenie s reálne použitým zariadením.
-Na úvod stačí CPU, 960 × 720 a 32-64 vzoriek. Finálne nastavenie nie je vybrané.
+V03 má porovnávací profil CPU, 1448 × 1086 a 96 vzoriek; celkové vizuálne prijatie zostáva otvorené.
 
 ## PDF / CAD regenerácia
 

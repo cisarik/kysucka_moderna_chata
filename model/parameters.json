@@ -365,5 +365,109 @@
       "roughness": 0.4,
       "status": "artistic approximation 2700 K appearance"
     }
-  ]
+  ],
+  "exterior_timber": {
+    "asset": "coated_pine_02",
+    "tile_m": 1.05,
+    "native_grain_axis": "U",
+    "uv_offset_method": "sha256(object.name), two uint64 / 2**64",
+    "maps": {
+      "diff": "assets/textures/wood/coated_pine_02/coated_pine_02_diff_2k.jpg",
+      "rough": "assets/textures/wood/coated_pine_02/coated_pine_02_rough_2k.jpg",
+      "nor_gl": "assets/textures/wood/coated_pine_02/coated_pine_02_nor_gl_2k.jpg"
+    },
+    "saturation": 0.85,
+    "value": 0.68,
+    "brightness_range": [
+      0.94,
+      1.06
+    ],
+    "roughness_map_range": [
+      0.44,
+      0.56
+    ],
+    "roughness_limits": [
+      0.42,
+      0.58
+    ],
+    "normal_strength": 0.3,
+    "bump_distance_m": 0.0002,
+    "bump_strength": 0.08,
+    "dephase_tiles": true,
+    "phase_offset_uv": [
+      0.317,
+      0.419
+    ],
+    "phase_blend_scale": 0.38
+  },
+  "fence_timber": {
+    "asset": "rough_wood",
+    "tile_m": 0.5,
+    "native_grain_axis": "V",
+    "uv_offset_method": "sha256(object.name), two uint64 / 2**64",
+    "maps": {
+      "diff": "assets/textures/wood/rough_wood/rough_wood_diff_2k.jpg",
+      "rough": "assets/textures/wood/rough_wood/rough_wood_rough_2k.jpg",
+      "nor_gl": "assets/textures/wood/rough_wood/rough_wood_nor_gl_2k.jpg"
+    },
+    "saturation": 0.55,
+    "value": 0.9,
+    "brightness_range": [
+      0.9,
+      1.1
+    ],
+    "roughness_map_range": [
+      0.74,
+      0.86
+    ],
+    "roughness_limits": [
+      0.72,
+      0.88
+    ],
+    "normal_strength": 0.5,
+    "bump_distance_m": 0.0007,
+    "bump_strength": 0.12
+  },
+  "foreground_fence": {
+    "selected_trial": 1,
+    "polyline_xy": [
+      [
+        16.6,
+        -8.62
+      ],
+      [
+        18.25,
+        1.0
+      ]
+    ],
+    "post_count": 26,
+    "seed": 13703,
+    "anchor_index": 4,
+    "anchor_s": 0.14,
+    "anchor_section_m": [
+      0.16,
+      0.13
+    ],
+    "anchor_top_z": 0.62,
+    "foot_z": -0.075,
+    "terrain_z": -0.055,
+    "top_z": 0.58,
+    "top_jitter_m": 0.04,
+    "stake_width_m": 0.085,
+    "width_jitter_m": 0.015,
+    "stake_depth_m": 0.065,
+    "depth_jitter_m": 0.01,
+    "spacing_jitter_m": 0.035,
+    "max_lean_deg": 2.0,
+    "bevel_m": 0.003,
+    "rail_heights_z": [
+      0.19,
+      0.43
+    ],
+    "rail_section_m": [
+      0.055,
+      0.065
+    ],
+    "rail_camera_offset_m": 0.02
+  }
 }

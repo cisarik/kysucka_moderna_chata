@@ -57,11 +57,15 @@ scene checkpoint. Generated PDF/CAD and old renders do not own current 3D behavi
 Manual Blender edits do not flow back into JSON or generators. A later grant
 must identify accepted scene/source versions before regeneration.
 
-The current working candidate is `blender/kysucka_chata_mcp_v02.blend`, saved
-through live MCP from the preserved v01 scene. Its camera location is
-[21.5, -10.0, 1.25], target [8.5, 2.5, 1.25], lens 35 mm and shift_y 0.105,
-matching `model/parameters.json`. S00 and v01 remain preserved;
-visual acceptance remains pending.
+The current working candidate is `blender/kysucka_chata_mcp_v03.blend`, saved
+through live MCP from preserved v02. Its camera remains locked at
+[21.5, -10.0, 1.25], target [8.5, 2.5, 1.25], 35 mm and shift_y 0.105.
+Dedicated PBR materials/metric UVs refine 89 exterior timber objects; 26 rustic
+foreground posts and two rails replace only the former fence. Shared original
+wood materials remain unchanged on 77 excluded objects. Reference, S00, v01 and
+v02 remain preserved; overall visual acceptance remains pending.
+`model/parameters.json` owns timber/fence targets and `scripts/timber_fence_v03.py`
+is the explicit shared refinement used by live MCP and the source builder.
 
 Protected initialization SHA-256 values:
 
@@ -85,6 +89,15 @@ Current MCP v02 SHA-256 values (the initialization and v01 values above remain h
 |---|---|
 | model/parameters.json | 2d441b08d658e4aa4c8fccc5e71c76eb16666deeb4401cdd0b973c379901cada |
 | blender/kysucka_chata_mcp_v02.blend | 010f47a81a4fde2e936f401e87b8bc11af76a8e72d71811d68dd910da0b27249 |
+
+Current MCP v03 SHA-256 values (all earlier tables remain historical):
+
+| File | SHA-256 |
+|---|---|
+| model/parameters.json | 153437c4a574243240011bb12a34b3597f199b5c18d36b54a8f3e8bcde45ad34 |
+| scripts/build_scene.py | baee0b204b17b5e696933ed97a9c915191b6c5b873320651da9cdf59f30288c0 |
+| scripts/timber_fence_v03.py | f94dce1b2da5c07d4064f8ac800304ce3e4c04372447eb737ac2a51aa73fcf98 |
+| blender/kysucka_chata_mcp_v03.blend | 360c99a107f9bd819e273274e3cd449a5b7666a27fc69c6ee3a51dfa7e120248 |
 
 Preserve reference/, blender/, model/, scripts/, cad/, docs/*.pdf, previews/,
 manifest/*.sha256, requirements-docs.txt, and tools/ during initialization.
@@ -113,6 +126,15 @@ camera comparison and v02 save. The current working file is
 perspective changed; non-camera geometry, materials, glass, world, lights and
 landscape remain unchanged. This task-specific route grants no future mutations
 or installations.
+
+For `kysucka-moderna-chata-realistic-timber-and-foreground-fence`, the explicit
+implementation grant reactivates `blender-mcp-live-v1` for timber materials,
+metric UVs, foreground fence, checkpoint, matched renders, packing and v03 save.
+The selected camera and all excluded content remain unchanged. Official CC0
+wood maps are listed in `assets/ASSET_MANIFEST.md` and packed with relative paths.
+CLI cold verification and replay use separate processes; `work/mcp-v03-before.blend`
+and `work/v03_source_replay.blend` are disposable evidence, never source authority.
+This task-specific route grants no future mutations or installations.
 
 Before an operation, verify the physical Git root, canonical project origin,
 the exact commit required by the current grant, permitted working-tree state,

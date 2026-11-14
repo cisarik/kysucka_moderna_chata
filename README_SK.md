@@ -13,11 +13,10 @@ ani architektonické preverenie sa zatiaľ netvrdia.
    Orchestrator; Master koordinuje vývojový beh. Starý prompt sa z histórie
    nevykonáva ako nové povolenie.
 3. Vizuálny cieľ je reference/kysucka_chata_moderna.png. Aktuálnu pracovnú kópiu
-   otvor cez File → Open → blender/kysucka_chata_mcp_v02.blend. Má kameru
+   otvor cez File → Open → blender/kysucka_chata_mcp_v03.blend. Má kameru
    s ohniskom 35 mm, shift_y = 0.105 a kamerový pohľad Cycles so svetlami
-   a svetom scény. Zachované sú blender/kysucka_chata_mcp_v01.blend aj
-   počiatočný model blender/kysucka_chata_seed.blend;
-   referencia je zabalená vo všetkých troch súboroch. Na otvorenie netreba auto-run ani MCP.
+   a svetom scény. Zachované sú v02, v01 aj počiatočný seed;
+   v03 obsahuje zabalenú referenciu a šesť textúr dreva. Na otvorenie netreba auto-run ani MCP.
 4. Michal doručuje aktuálne úplné prompty manuálne do určenej relácie.
    Režim a súradnice určuje grant. Súhlas s plánom ani tlačidlo Build
    neposkytujú realizačné povolenie.
@@ -25,7 +24,7 @@ ani architektonické preverenie sa zatiaľ netvrdia.
    Worker uloží vlastnú správu len s povolením a dostupnou schopnosťou;
    pri obmedzení klienta vráti úplný výstup a uvedie chýbajúce uloženie.
 6. Inicializačný celok zaviedol AP/Meta. V01 upravuje zvislé rámovanie;
-   aktuálna v02 vyberá perspektívu z troch kamier. Vizuálne prijatie zostáva
+   v02 vyberá perspektívu z troch kamier a v03 pridáva PBR drevo a plot v popredí. Vizuálne prijatie zostáva
    na tebe. Ďalšie úpravy musí
    pomenovať a povoliť aktuálny úplný grant.
 
@@ -38,7 +37,10 @@ ani architektonické preverenie sa zatiaľ netvrdia.
 | cad/*.dxf a cad/svg/ | samostatné editovateľné schémy; mm v DXF, tlačové mierky v SVG |
 | blender/kysucka_chata_seed.blend | reálny počiatočný model; Blender 4.3.2, metre |
 | blender/kysucka_chata_mcp_v01.blend | zachovaná prvá pracovná kópia cez MCP; 50 mm, posun kamery 0.075 |
-| blender/kysucka_chata_mcp_v02.blend | aktuálna pracovná kópia cez MCP; Blender 5.2.3 LTS, 35 mm, posun kamery 0.105, kamerový pohľad Cycles |
+| blender/kysucka_chata_mcp_v02.blend | zachovaná perspektívna pracovná kópia; 35 mm, posun kamery 0.105 |
+| blender/kysucka_chata_mcp_v03.blend | aktuálna pracovná kópia; PBR drevo, rustikálny plot, rovnaká kamera a Cycles CPU s OIDN |
+| assets/ASSET_MANIFEST.md | šesť overených 2K CC0 máp dreva, zdroje a kontrolné súčty |
+| scripts/timber_fence_v03.py | spoločná explicitná úprava materiálov, metrických UV a plota |
 | previews/camera_a_material.png | skutočný počiatočný farebný render z .blend |
 | previews/camera_a_clay.png | skutočný sivý kontrolný render rovnakej kamery |
 | model/parameters.json | spoločné hlavné rozmery, otvory, miestnosti, materiálové ciele a kamera |
@@ -65,10 +67,10 @@ netreba odovzdávať; najprv chceš dosiahnuť veľmi dobrú vizualizáciu.
 
 ## Čo bude treba z internetu
 
-Na otvorenie a prvý render nič. Všetky súčasné materiály sú procedurálne;
-obrázok je zabalený. Až po prijatí tvaru a kamery môže Worker dostať presný
-grant na konkrétne PBR drevo, kameň, kvalitné rastliny alebo HDRI.
-Poly Haven a ambientCG poskytujú CC0 aktíva; konkrétne súbory sa ešte nevybrali.
+Na otvorenie v03 netreba internet: referencia aj šesť máp dreva sú zabalené.
+Exteriér používa `coated_pine_02`, plot `rough_wood` od Poly Haven pod CC0;
+presný pôvod a SHA-256 uvádza `assets/ASSET_MANIFEST.md`. Kameň, rastliny a HDRI
+možno dopĺňať až pod ďalším konkrétnym grantom.
 Každý budúci import má mať zaznamenaný pôvod, licenciu a kontrolný súčet.
 Neznáme modely s automatickými skriptmi a balíky platených doplnkov sa
 nemajú inštalovať len preto, že je otvorený Blender.
@@ -81,9 +83,10 @@ nemajú inštalovať len preto, že je otvorený Blender.
   uložení potrebuje bezpečné opätovné načítanie.
 - Ručná úprava .blend nemení JSON a generátor; pred regeneráciou sa musí
   zosúladiť, ktorá verzia je prijatá.
-- V02 zlepšuje obrys strechy a pomer fasád pri nezmenenom modeli. Poloha
-  krbu za rohom a rozsah plota zostávajú kompromismi; porovnanie troch
-  kamier a merania sú v externom Meta celku 00/02-reference-camera-perspective/.
+- V03 ponecháva kameru v02, zlepšuje drevo a vedie plot cez celé popredie.
+  Zdrojové parametre a generátor sú zosúladené; porovnanie pred/po a výrezy
+  sú v externom Meta celku 00/03-realistic-timber-and-foreground-fence/.
+  Vegetácia, obloha, viditeľnosť krbu/komín a vnútorné priečky zostávajú témami ďalšej práce.
 - Stromy, kvety a nábytok sú zámerné náhrady. Prvé prijatie má sledovať
   kameru a siluetu, nie kvalitu botanických detailov.
 - Projekt je Git repozitár s kanonickým originom uvedeným vyššie. Lokálny commit, verejné publikovanie a prijatie sú samostatné tvrdenia, ktoré sa overujú pri konkrétnej úlohe.

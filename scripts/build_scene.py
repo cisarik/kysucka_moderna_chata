@@ -318,7 +318,7 @@ for i in range(23):
 
 # Lighting and camera. Generated sky is procedural; no HDRI is required.
 world=bpy.data.worlds.new('WORLD_procedural_sky');scene.world=world;world.use_nodes=True
-n=world.node_tree.nodes;n.clear();sky=n.new('ShaderNodeTexSky');sky.sky_type='NISHITA';sky.sun_elevation=math.radians(26);sky.sun_rotation=math.radians(228);sky.altitude=.5;sky.air_density=1.1;sky.sun_disc=False
+n=world.node_tree.nodes;n.clear();sky=n.new('ShaderNodeTexSky');sky.sky_type='NISHITA' if 'NISHITA' in [i.identifier for i in sky.bl_rna.properties['sky_type'].enum_items] else 'SINGLE_SCATTERING';sky.sun_elevation=math.radians(26);sky.sun_rotation=math.radians(228);sky.altitude=.5;sky.air_density=1.1;sky.sun_disc=False
 bg=n.new('ShaderNodeBackground');bg.inputs['Strength'].default_value=.26;wo=n.new('ShaderNodeOutputWorld');world.node_tree.links.new(sky.outputs['Color'],bg.inputs['Color']);world.node_tree.links.new(bg.outputs[0],wo.inputs[0])
 sun_data=bpy.data.lights.new('SUN_key','SUN');sun_data.energy=2.0;sun_data.angle=math.radians(5)
 sun=bpy.data.objects.new('SUN_key',sun_data);cols['60_LIGHTS'].objects.link(sun);sun.rotation_euler=(math.radians(28),math.radians(-28),math.radians(-32))
@@ -343,6 +343,13 @@ for screen in bpy.data.screens:
         if a.type=='VIEW_3D':
             a.spaces.active.region_3d.view_perspective='CAMERA';a.spaces.active.clip_end=500
             a.spaces.active.shading.type='MATERIAL';a.spaces.active.overlay.show_overlays=False
+# Preserve the original fence draws and all later vegetation before v03 refinement.
+from timber_fence_v03 import apply_v03, configure_comparison_render
+v03_rng_before = random.getstate()
+v03_result = apply_v03(scene, P, ROOT)
+assert random.getstate() == v03_rng_before
+configure_comparison_render(scene)
+print('V03_REFINEMENT', json.dumps(v03_result, sort_keys=True))
 bpy.ops.file.pack_all()
 bpy.ops.wm.save_as_mainfile(filepath=str(out),compress=True)
 print('SEED_SAVED',out,'Blender',bpy.app.version_string,'objects',len(scene.objects),'meters',L,W,F,E,R)
