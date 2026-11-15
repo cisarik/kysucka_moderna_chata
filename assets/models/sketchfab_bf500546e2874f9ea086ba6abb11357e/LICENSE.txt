@@ -1,0 +1,6 @@
+Realistic HD Norway spruce (3/43)
+Creator: PlantCatalog
+Source: https://sketchfab.com/3d-models/realistic-hd-norway-spruce-343-bf500546e2874f9ea086ba6abb11357e
+License: https://creativecommons.org/licenses/by/4.0/
+Modifications: Selected source LOD2 as retained LOD0; static decimated LOD1; Z-up base origin; rebuilt alpha/normal and restrained translucency materials; grayscale foliage tinted deep green; Norway young crown narrowed in horizontal axes by 0.72. Source maps retained at at most 2K.
+No endorsement by the original creators is implied.

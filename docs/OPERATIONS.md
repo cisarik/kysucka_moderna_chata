@@ -136,7 +136,7 @@ a nič neinštalujú. Nemajú oprávnenie samy od seba meniť seed.
 
 ## Bežné otvorenie bez terminálu
 
-V Blenderi: File → Open → `blender/kysucka_chata_mcp_v03.blend`. Zachované sú
+V Blenderi: File → Open → `blender/kysucka_chata_mcp_v04.blend`. Zachované sú
 v02, v01 a seed `blender/kysucka_chata_seed.blend`.
 V03 má nastavený kamerový pohľad Cycles
 so svetlami a svetom scény. Na notebooku možno použiť View → Cameras → Active Camera.
@@ -164,3 +164,37 @@ Zapisuje PDF, DXF, SVG a computed_metrics.json; nie je to read-only kontrola.
 Závislosti uvádza requirements-docs.txt. Prvý Planner ich neinštaluje.
 DXF je R2013 v milimetroch; Blender je v metroch. SVG a PDF majú spoločnú
 2D geometriu. Kóty v DXF sú neasociatívny text a čiary, nie výrobná dokumentácia.
+
+## V04 — kopce, les a prirodzená záhrada
+
+Aktuálny kandidát je `blender/kysucka_chata_mcp_v04.blend`. Zachované sú seed,
+v01, v02 aj kanonická v03. Grant 01/03 osobitne povolil zachovať Michalovo
+uloženie pohľadu v kontrolnom bode `work/mcp-v04-before.blend` a obnoviť v03
+na jej prijaté bajty. Ďalšie uloženia scény smerovali iba do v04.
+
+`scripts/landscape_v04.py` nemá účinky pri importe ani sieťové požiadavky.
+`apply_v04(scene, P, ROOT)` používa lokálny RNG 13704, normalizované knižnice
+zo `landscape_v04.assets` a zdieľané siete. Zo zdrojového generátora sa volá
+hneď po `apply_v03`; v živej v03 sa opakuje iba v04. Druhé volanie nevytvára
+ďalšie objekty, materiály ani textúry. Zdrojové master kolekcie mimo scény a
+pôvodné materiály trávy/zeminy majú fake user, aby sa zachovali po uložení.
+
+V04 obsahuje 79 zabalených súborových obrázkov vrátane referencie a dreva.
+Rastlinné mapy majú relatívne cesty `//../assets/models/.../textures/...`.
+Knižnice a ich kontrolné súčty vlastní `assets/ASSET_MANIFEST.md`. Zostavenie
+nepotrebuje pôvodné archívy ani internet. Nepovoľuje auto-run alebo inštaláciu.
+
+Cold kontrola používa existujúci Blender s `--background --disable-autoexec`.
+Overenie zdrojov používa `--background --factory-startup --disable-autoexec`
+a `scripts/build_scene.py -- --output <nový-grantom-povolený-súbor>`.
+Tento beh vytvoril iba dočasnú `work/v04_source_replay.blend`; pred opakovaním
+treba nový grant a preverenie kolízií. Porovnávajú sa objekty, transformácie,
+siete, UV, priradenia materiálov, inštancie a zabalené obrázky; nie UI cache
+ani úplný zoznam predvolených RNA hodnôt medzi verziami Blenderu.
+
+Výstupný profil zostáva 1448 × 1086, Cycles CPU, 8 vlákien, 96 vzoriek,
+OpenImageDenoise, snímka/seed 0, AgX/None, expozícia 0 a gamma 1.
+Pred/po, výrezy bez zmeny mierky a technické dôkazy patria do externého
+Meta celku `00/04-kysuce-forest-and-natural-garden/`. Jeho `render_metadata.json`
+vyžaduje explicitné vynútené zaradenie Cooperatorom podľa Meta ignore pravidiel.
+Celkové vizuálne prijatie zostáva otvorené; tento opis neudeľuje ďalšiu autoritu.

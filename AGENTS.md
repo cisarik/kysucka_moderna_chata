@@ -57,15 +57,25 @@ scene checkpoint. Generated PDF/CAD and old renders do not own current 3D behavi
 Manual Blender edits do not flow back into JSON or generators. A later grant
 must identify accepted scene/source versions before regeneration.
 
-The current working candidate is `blender/kysucka_chata_mcp_v03.blend`, saved
-through live MCP from preserved v02. Its camera remains locked at
+The current working candidate is `blender/kysucka_chata_mcp_v04.blend`, saved
+through live MCP from preserved v03. Its camera remains locked at
 [21.5, -10.0, 1.25], target [8.5, 2.5, 1.25], 35 mm and shift_y 0.105.
 Dedicated PBR materials/metric UVs refine 89 exterior timber objects; 26 rustic
 foreground posts and two rails replace only the former fence. Shared original
-wood materials remain unchanged on 77 excluded objects. Reference, S00, v01 and
-v02 remain preserved; overall visual acceptance remains pending.
+wood materials remain unchanged on 77 excluded objects. Reference, S00, v01, v02 and
+v03 remain preserved; overall visual acceptance remains pending.
 `model/parameters.json` owns timber/fence targets and `scripts/timber_fence_v03.py`
 is the explicit shared refinement used by live MCP and the source builder.
+
+The v04 environment uses `scripts/landscape_v04.py::apply_v04(scene, P, ROOT)`
+and `model/parameters.json::landscape_v04`: 1,200 linked forest placements
+(780 Picea mariana and 420 Picea abies), four young spruces, one static orchard
+tree with 28 attached fruit instances, 51 planted clump groups and 104 edge-grass
+groups. The 263 superseded proxies remain hidden and retained. Existing site and
+bed vertex coordinates are unchanged; dedicated shaders replace only their slots.
+Sixteen off-scene master collections and the two original ground materials carry
+fake users so they survive saving. Native render output and source replay use
+the locked camera, preserved world/lights and v03 comparison profile.
 
 Protected initialization SHA-256 values:
 
@@ -98,6 +108,15 @@ Current MCP v03 SHA-256 values (all earlier tables remain historical):
 | scripts/build_scene.py | baee0b204b17b5e696933ed97a9c915191b6c5b873320651da9cdf59f30288c0 |
 | scripts/timber_fence_v03.py | f94dce1b2da5c07d4064f8ac800304ce3e4c04372447eb737ac2a51aa73fcf98 |
 | blender/kysucka_chata_mcp_v03.blend | 360c99a107f9bd819e273274e3cd449a5b7666a27fc69c6ee3a51dfa7e120248 |
+
+Current MCP v04 SHA-256 values (all earlier tables remain historical):
+
+| File | SHA-256 |
+|---|---|
+| model/parameters.json | a2239cd2ef6b75545e9f0a8ca750c11553678674c8ee1fde11818cb77d40ba77 |
+| scripts/build_scene.py | 8dfe65695ad99e25fad53d465fd8d79e4f6f5a7f7e8f1ef780ad9385ac08ce15 |
+| scripts/landscape_v04.py | 950d23c79bc50b26a1c606cff36605923a1c172b660f15945f58faf9beceb723 |
+| blender/kysucka_chata_mcp_v04.blend | c19b37cf75037969d2608677d276880d46e9ae7afc31aa11a78c340241fa3d43 |
 
 Preserve reference/, blender/, model/, scripts/, cad/, docs/*.pdf, previews/,
 manifest/*.sha256, requirements-docs.txt, and tools/ during initialization.
@@ -135,6 +154,15 @@ wood maps are listed in `assets/ASSET_MANIFEST.md` and packed with relative path
 CLI cold verification and replay use separate processes; `work/mcp-v03-before.blend`
 and `work/v03_source_replay.blend` are disposable evidence, never source authority.
 This task-specific route grants no future mutations or installations.
+
+For `kysucka-moderna-chata-kysuce-forest-and-natural-garden`, the explicit
+implementation grant activates `blender-mcp-live-v1` for normalized CC0/CC-BY
+assets, deterministic hills/vegetation, packing, v04 save and matched renders.
+Step 0 preserved the Cooperator viewport save in `work/mcp-v04-before.blend`
+and restored tracked v03 to its canonical HEAD bytes under explicit authority.
+Only v04 receives subsequent scene saves. Separate CLI processes perform cold
+verification and source replay. This task-specific route grants no future
+mutation, installation, Git publication or owner-work restoration authority.
 
 Before an operation, verify the physical Git root, canonical project origin,
 the exact commit required by the current grant, permitted working-tree state,

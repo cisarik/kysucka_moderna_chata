@@ -1,0 +1,6 @@
+Periwinkle Plant
+Creator: Amal Kumar
+Source: https://polyhaven.com/a/periwinkle_plant
+License: https://polyhaven.com/license
+Modifications: Selected individual static clumps and supplied LODs only; removed demo modifiers and dependencies; base-centred origins; rebuilt alpha/OpenGL normal/roughness shaders; packed selected maps (2K shrub, 1K others).
+No endorsement by the original creators is implied.

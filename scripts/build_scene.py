@@ -49,6 +49,8 @@ def wood(name,col,vertical=False):
     ramp.color_ramp.elements[1].position=.85;ramp.color_ramp.elements[1].color=(*(min(1,x*1.2) for x in col),1)
     l.new(tex.outputs['Fac'],ramp.inputs[0]);l.new(ramp.outputs['Color'],bs.inputs['Base Color'])
     bump=n.new('ShaderNodeBump');bump.inputs['Strength'].default_value=.19;bump.inputs['Distance'].default_value=.018
+    # Retain the seed's authored bump filtering across Blender default changes.
+    if 'Filter Width' in bump.inputs:bump.inputs['Filter Width'].default_value=1.0
     l.new(tex.outputs['Fac'],bump.inputs['Height']);l.new(bump.outputs[0],bs.inputs['Normal']);return m
 
 specs={v['id']:v for v in P['materials']}
@@ -350,6 +352,11 @@ v03_result = apply_v03(scene, P, ROOT)
 assert random.getstate() == v03_rng_before
 configure_comparison_render(scene)
 print('V03_REFINEMENT', json.dumps(v03_result, sort_keys=True))
+from landscape_v04 import apply_v04
+v04_rng_before = random.getstate()
+v04_result = apply_v04(scene, P, ROOT)
+assert random.getstate() == v04_rng_before
+print('V04_REFINEMENT', json.dumps(v04_result, sort_keys=True))
 bpy.ops.file.pack_all()
 bpy.ops.wm.save_as_mainfile(filepath=str(out),compress=True)
 print('SEED_SAVED',out,'Blender',bpy.app.version_string,'objects',len(scene.objects),'meters',L,W,F,E,R)

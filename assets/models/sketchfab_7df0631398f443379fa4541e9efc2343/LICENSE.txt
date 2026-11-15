@@ -1,0 +1,6 @@
+Blossoming apple tree
+Creator: Lassi Kaukonen (thesidekick)
+Source: https://sketchfab.com/3d-models/blossoming-apple-tree-7df0631398f443379fa4541e9efc2343
+License: https://creativecommons.org/licenses/by/4.0/
+Modifications: Ground skirt pruned (53944 vertices), root plane normalized; height 4.15 m; static mesh reduced to approximately 80k triangles; 8K maps downscaled to 2K; restrained green crown grade preserving trunk texture. Fruit anchors sampled on brown textured outer crown geometry.
+No endorsement by the original creators is implied.
