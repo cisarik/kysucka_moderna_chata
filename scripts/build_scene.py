@@ -357,6 +357,36 @@ v04_rng_before = random.getstate()
 v04_result = apply_v04(scene, P, ROOT)
 assert random.getstate() == v04_rng_before
 print('V04_REFINEMENT', json.dumps(v04_result, sort_keys=True))
+from site_v05 import apply_v05
+v05_rng_before = random.getstate()
+v05_result = apply_v05(scene, P, ROOT)
+assert random.getstate() == v05_rng_before
+print('V05_REFINEMENT', json.dumps(v05_result, sort_keys=True))
+from vegetation_v06 import apply_v06
+v06_rng_before = random.getstate()
+v06_result = apply_v06(scene, P, ROOT)
+assert random.getstate() == v06_rng_before
+print('V06_REFINEMENT', json.dumps(v06_result, sort_keys=True))
+from forest_trail_v07 import apply_v07
+v07_rng_before = random.getstate()
+v07_result = apply_v07(scene, P, ROOT)
+assert random.getstate() == v07_rng_before
+print('V07_REFINEMENT', json.dumps(v07_result, sort_keys=True))
+from vegetation_v08 import apply_v08
+v08_rng_before = random.getstate()
+v08_result = apply_v08(scene, P, ROOT)
+assert random.getstate() == v08_rng_before
+print('V08_REFINEMENT', json.dumps(v08_result, sort_keys=True))
 bpy.ops.file.pack_all()
+# Source images are ROOT-relative before the first save. Rebase them for any
+# granted --output directory; packed bytes and the canonical one-level paths
+# remain unchanged. A deep isolated replay must also resolve its external maps.
+import os
+for image in bpy.data.images:
+    if image.source == 'FILE':
+        assert image.filepath.startswith('//../'), image.filepath
+        source_image = ROOT / image.filepath[5:]
+        assert source_image.is_file() and image.packed_file, source_image
+        image.filepath = '//' + os.path.relpath(source_image, out.parent)
 bpy.ops.wm.save_as_mainfile(filepath=str(out),compress=True)
 print('SEED_SAVED',out,'Blender',bpy.app.version_string,'objects',len(scene.objects),'meters',L,W,F,E,R)

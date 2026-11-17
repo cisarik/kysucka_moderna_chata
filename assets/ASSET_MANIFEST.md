@@ -186,3 +186,52 @@ Mapy farby používajú sRGB, alfa/drsnosť/OpenGL normála/oklúzia Non-Color. 
 | `V04_MASTER_PERIWINKLE_PLANT_0` | -0.13038..0.13038 / -0.16037..0.16037 / 0.00000..0.39726 |
 | `V04_MASTER_PERIWINKLE_PLANT_1` | -0.08373..0.08373 / -0.07328..0.07328 / 0.00000..0.29996 |
 | `V04_MASTER_PERIWINKLE_PLANT_2` | -0.05555..0.05555 / -0.07045..0.07045 / 0.00000..0.20589 |
+
+## Trávnik a lúka v05
+
+Doplnené 16. 11. 2026: [ambientCG Grass005](https://ambientcg.com/view?id=Grass005),
+[CC0](https://docs.ambientcg.com/license/). Oficiálne [API](https://ambientcg.com/api/v2/full_json?id=Grass005&include=downloadData) uvádza `creationMethod: PBRProcedural`; nejde o tvrdenie o overenom fotoskene.
+
+Finálna voľba je **1K-JPG**: samostatný 2K render prekročil cieľ pamäte.
+Zachováva rovnakú geometriu listov, mapové kanály, UV mierku a shaderové nastavenia.
+[1K ZIP](https://ambientcg.com/get?file=Grass005_1K-JPG.zip) má 10 442 657 B; overili sa ZIP CRC a serverový SHA-1 `88dd838d26fddf31925ccb8c0ddf873e6c71f227`.
+SHA-256 archívu je `58a7fb7f32c44a86879483325b62781d04e0ab8f70b0f70ede36c8f1726f8a22`.
+
+| Súbor | Úloha / farebný priestor | Rozlíšenie | Bajty | SHA-256 |
+|---|---|---|---:|---|
+| `assets/textures/grass/Grass005/Grass005_1K-JPG_Color.jpg` | farba / sRGB | 1024 × 1024 | 1875015 | `5fd8edc1a04e2b9b093229dd0ec41f29668dda9fc698f6610b12cdd83b7690cb` |
+| `assets/textures/grass/Grass005/Grass005_1K-JPG_Roughness.jpg` | drsnosť / Non-Color | 1024 × 1024 | 851896 | `04ca3a66eee6105cac9754ac773ffd4ee63ca2222984554c4c04b0cdca80da26` |
+| `assets/textures/grass/Grass005/Grass005_1K-JPG_NormalGL.jpg` | OpenGL normála / Non-Color | 1024 × 1024 | 2137845 | `f89e3a1701511d379a9772774ec6b9d7b7ccf3e944fdcc2b98c09dee4cfd804f` |
+
+Zdrojové JPG sú neupravené, zabalené a majú relatívne cesty `//../assets/textures/grass/Grass005/...`.
+Mierka 1 × 1 m je vizuálny predpoklad; API neuvádza merané fyzické rozmery.
+Oba nové podkladové materiály používajú svetové XY UV, spoločné miešanie fáz
+(0,317; 0,419), pomalú masku, drsnosť 0,80–0,98 a OpenGL normálu s intenzitou 0,35.
+Geometrický displacement sa nepoužíva.
+
+Pôvodne overený [2K ZIP](https://ambientcg.com/get?file=Grass005_2K-JPG.zip) má
+39 523 019 B a SHA-256 `89183d8dceabc3c23a26978f426e1662143dd2f84f1dc3586a1592d101e5234b`.
+Jeho mapy, archív a 2K kandidáti zostávajú v gitignored `work/` ako meracia evidencia.
+Do projektu patria iba tri finálne 1K mapy. Modely, USD a ďalšie súbory archívov
+sa neimportovali.
+
+Krátke 4–10 cm listy trávnika sú nová procedurálna geometria. Lúčne 25–65 cm
+skupiny vychádzajú z kópií `grass_medium_01` od Rob Tuytel a Rico Cilliers
+(Poly Haven CC0), s jemnými procedurálnymi steblami/hlávkami a vlastnými
+zelenými/suchými materiálmi. Na nerovnom podklade sa samostatne usádzajú
+zdieľané časti trsov; žiadna normalizovaná v04 knižnica sa nemení.
+Pôvodné CC BY 4.0 kredity PlantCatalog a Lassi Kaukonen uvedené vyššie zostávajú
+platné a patria aj k šíreným renderom. Čierny smrek je zvolené vizuálne aktívum.
+
+
+## Chodník v07 — štrkový povrch
+
+Pridané 17. 11. 2026. [Gravel Ground 01](https://polyhaven.com/a/gravel_ground_01), autor Rob Tuytel, [CC0](https://polyhaven.com/license). Oficiálna stránka uvádza šírku opakovania 3 m; vybrané JPG majú 2048 × 2048 px. Súbory zostávajú neupravené.
+
+| Súbor | Úloha / farebný priestor | Bajty | SHA-256 | Zdroj |
+|---|---|---:|---|---|
+| `assets/textures/gravel/gravel_ground_01/gravel_ground_01_diff_2k.jpg` | diffuse / sRGB | 3823037 | `b626c16301208b67eba976ad71860d98fd6fe82ae1c87d9d27692e70c1089cd2` | [JPG](https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/gravel_ground_01/gravel_ground_01_diff_2k.jpg) |
+| `assets/textures/gravel/gravel_ground_01/gravel_ground_01_rough_2k.jpg` | roughness / Non-Color | 1582667 | `18d0214f0b5b916d2439a24eef32ac82574f3fc34d1bef02fc92abfbf3d69fce` | [JPG](https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/gravel_ground_01/gravel_ground_01_rough_2k.jpg) |
+| `assets/textures/gravel/gravel_ground_01/gravel_ground_01_nor_gl_2k.jpg` | NormalGL / Non-Color | 5481185 | `571eb16b158eb8581ab5348579a26f42c3c711536941f347074795e79afe6329` | [JPG](https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/gravel_ground_01/gravel_ground_01_nor_gl_2k.jpg) |
+
+Spolu 10 886 889 bajtov. Použité mapy sa balia do v07 s relatívnymi cestami. UV opakovanie je 3 × 3 m; farba má saturáciu 0,62 a hodnotu 0,82, drsnosť 0,78–0,94, OpenGL normála intenzitu 0,28. Dve rovnako mierkované fázy majú posun (0,317; 0,419) a pomalé miešanie. Geometrický displacement sa nepoužíva. Pôvodné kredity a knižnice ostávajú platné. Lokálny pôdny lem používa vlastnú kópiu shaderu lúky; pôvodný materiál sa nemení. Tri drobné predlohy kamienkov a tri predlohy ihličia sú procedurálna geometria v07, bez ďalšieho stiahnutého aktíva.

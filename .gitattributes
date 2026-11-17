@@ -1,0 +1,4 @@
+/blender/kysucka_chata_mcp_v06.blend filter=lfs diff=lfs merge=lfs -text
+/blender/kysucka_chata_mcp_v07.blend filter=lfs diff=lfs merge=lfs -text
+/blender/kysucka_chata_mcp_v08.blend filter=lfs diff=lfs merge=lfs -text
+/blender/kysucka_chata_mcp_v08_view.blend filter=lfs diff=lfs merge=lfs -text

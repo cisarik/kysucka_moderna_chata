@@ -57,7 +57,7 @@ scene checkpoint. Generated PDF/CAD and old renders do not own current 3D behavi
 Manual Blender edits do not flow back into JSON or generators. A later grant
 must identify accepted scene/source versions before regeneration.
 
-The current working candidate is `blender/kysucka_chata_mcp_v04.blend`, saved
+The preserved v04 predecessor is `blender/kysucka_chata_mcp_v04.blend`, saved
 through live MCP from preserved v03. Its camera remains locked at
 [21.5, -10.0, 1.25], target [8.5, 2.5, 1.25], 35 mm and shift_y 0.105.
 Dedicated PBR materials/metric UVs refine 89 exterior timber objects; 26 rustic
@@ -233,3 +233,287 @@ is POSIX shell and remains unchanged.
 
 Do not copy ap.project.conf or install Poetry, uv, a venv, or another runtime.
 A root runtime contract requires a named Cooperator decision for a real need.
+
+### Current MCP v05 — world-space site
+
+The preserved v05 candidate is `blender/kysucka_chata_mcp_v05.blend`, created
+from preserved v04 under the explicit implementation grant for
+`kysucka-moderna-chata-spatial-site-valley-and-grass`. The task-specific
+`blender-mcp-live-v1` route uses the existing Linux Blender 5.3.0 GUI; isolated
+`/home/agile/Applications/Blender/blender` processes verify cold reopen and replay.
+This record grants no future mutation, installation or Git publication.
+
+`model/parameters.json::site_v05` owns the terrain, garden, masks, populations and
+review poses. `scripts/site_v05.py::apply_v05(scene, P, ROOT)` follows v03/v04 in
+the builder and uses isolated RNG 13705. The protected terrace
+`[-15,19] × [-10,11.5] m` retains all 126 original vertices exactly. Protected
+building/interior/bed/path/orchard/timber/fence witness data remain unchanged.
+The four v04 hill ribbons are hidden and retained; 1,200 existing forest trees
+and young spruces 02/03 are vertically re-grounded on the common surface.
+
+The continuous closed terrain spans `[-260,320] × [-220,260] m` with a descending
++X valley. The convex garden is 810.910 m², 34.70 × 25.12 m, with a closed gate
+and four additional approach slabs. Original 26 fence stakes/two rails remain
+intact. V05 adds 286 stakes (including gate posts) and 100 rails (including gate
+rails), plus gate palings/brace/hinges/latch. No fruit tree is added.
+
+V05 adds 1,200 linked spruces, 5,332 short-lawn patches and 8 232 meadow
+groups. 489 groups use 6 726 independently grounded linked constituents
+where support variation exceeds 10 mm. Far meadow density is halved after
+capping. Original v04 libraries/materials remain unchanged; interior edge tufts
+are hidden. Nineteen off-scene V04/V05 master collections and the original
+terrain snapshot carry fake users. Three Grass005 1K JPG maps are packed.
+
+C1 remains `[21.5,-10,1.25] → [8.5,2.5,1.25]`, 35 mm, sensor 36 mm, shifts
+0/0.105, clip_end 500 m. It is active in the saved scene with the established
+1448 × 1086 / 96-sample CPU OIDN comparison profile. `work/` checkpoints and
+`work/v05_source_replay.blend` are temporary evidence, never source authority.
+The visual candidate awaits Cooperator acceptance; no architectural/site
+calibration is asserted.
+
+Current MCP v05 SHA-256 values (earlier tables remain historical):
+
+| File | SHA-256 |
+|---|---|
+| `model/parameters.json` | `66ed4d7246ca211a55d3067a4b14f50e8af706efc669c4dd4911c7c0c1d2d664` |
+| `scripts/build_scene.py` | `9c7863c125c74f2894529ad247f8d5eb8f9b756f3f1af26dd8be094ebd7a8c6b` |
+| `scripts/site_v05.py` | `f6f122dbacb293bb8a90f748583555516c8d57344112c47a62eba172afb821aa` |
+| `blender/kysucka_chata_mcp_v05.blend` | `c3bd3d5e847c52d33a60f3f89cf4392da85a24df96fe7774a25a37bd39d8fafe` |
+
+### CachyOS workstation and forward visual criteria
+
+The exclusive development workstation is CachyOS Linux at
+`/home/agile/Projects/kysucka_moderna_chata`. Michal reports 32 GiB system RAM,
+with approximately 20 GiB still available while normal development tools,
+Blender and the browser are running. Direct inspection also observed an
+`NVIDIA GeForce RTX 3080` with 10,240 MiB VRAM and the existing Blender 5.3.0
+Cycles `CUDA` and `OPTIX` devices enabled. Actual device use and VRAM/system RAM
+must be measured per render rather than inferred merely from preferences.
+
+The legacy 3 GiB render-RSS target was a bounded planning assumption, not a
+workstation requirement. It led to Grass005 1K selection, halved far-meadow
+population and 32 m meadow chunks in saved v05. It is not a standing reason
+to cap later candidates. Future refinements should choose quality from visual 1:1
+A/B evidence and measured CPU/GPU/RAM/VRAM behavior, while retaining existing
+CPU/OIDN comparisons where needed.
+
+The v05 candidate is technically replayable, but it is not an accepted final
+photorealistic visualization. The whole's closure carries an explicit visual
+gap register into Master. In particular, the far valley ridge and several
+slopes still need dense, varied forest; the meadow needs continuous cover rather
+than isolated dark clumps; and the lawn needs more naturally curved/thicker 3D
+blade sections, thatch and spatial variation. Glass roughness 0.07 blurs the
+inside view. The original fireplace's gable reflection is disclosed, not an
+unidentified exterior tree. A subsequent gate-approach landing must close the
+remaining approximately 18–22 cm route gap to the gate. Review-camera NW/SZ
+needs an unobstructed review pose without hiding forest. Additional fruit and
+architectural/interior/lighting work remain separate accepted future objectives,
+not permission to mutate the v05 scene.
+
+### Pre-meadow MCP v06 — compressed exterior and dense vegetation candidate
+
+The pre-meadow saved candidate was `blender/kysucka_chata_mcp_v06.blend`, produced
+under V06-RESOURCE-BOUNDED-COMPLETION and Michal's explicit amendment to halve
+exterior landscape and trees while retaining the cottage, enclosed garden,
+path and cameras. This record grants no future mutation or Git publication.
+`model/parameters.json::vegetation_v06` and
+`scripts/vegetation_v06.py::apply_v06(scene, P, ROOT)` own the deterministic
+seed-13706 treatment, called after the unchanged v03/v04/v05 builder steps.
+All 17 older parameter sections and previous modules remain unchanged.
+
+V06 copies the original terrain into owned derived meshes, contracts X/Y
+outside the fixed core `[-15.5,19.2] x [-10,16.5]` by 0.5, and blends terrain
+height to the same factor over an 8 m join from datum -0.055 m. Active extent
+is about `[-137.75,169.60] x [-115,138.25]`. Original terrain geometry, topology,
+UVs and normals remain retained hidden; two ground slots use owned materials.
+The exterior young spruce 03 is retained hidden and replaced by a linked
+half-size instance. Cottage, garden, C1, old cameras, timber, enclosure/gate,
+paving, orchard, interior, glass, world/lights and source libraries are preserved.
+
+The full candidate has 12,833 linked tree placements, 6,793 lawn patches and
+1,134,737 meadow patches. Meadow is resampled at natural blade/stem sizes.
+Support uses actual terrain triangles, small linked subpatches and bounded
+root envelopes; 2,973 tiny cells (11.6133 square metres) are rejected and
+reported. Full idempotence, actual supports/masks, source replay and cold
+semantic checks pass. Geometry remains instanced. Existing Grass005 1K maps
+and original asset credits remain; no asset was downloaded or introduced.
+
+Official matched renders use P0 CPU/OIDN Accurate/High, 8 threads, 96 samples,
+1448 x 1086 for C1, frame/seed 0 and AgX/None, exposure 0/gamma 1. Full OPTIX
+completed but left only 159 MiB VRAM, below the declared approximately 1 GiB
+guard; the earlier P1 bridge did not fail. Following a reported system reset,
+CPU jobs and heavy validation were serialized with a SOLID viewport. No
+further GPU attempt, driver change or saved preferences occurred.
+
+V06 is a technically saved/replayable PARTIAL visual result. Canopy overlaps
+more and covers more of the distant ridge, but meadow bands/stepped bare
+patches, overly uniform narrow lawn blades and some needle-like silhouettes
+and an unforested central crest remain. Original roughness-0.07 glass still blurs the inside view. The sharp
+outside-glass diagnostic is not an interior repair. No professional visual,
+architectural/site acceptance or publication is asserted. Evidence and the
+terminal Worker report belong to Meta `00/06-dense-forest-and-continuous-meadow/`;
+`work/v06/final/` and replay/checkpoint files are temporary evidence only.
+
+Pre-meadow MCP v06 SHA-256 values (all earlier tables remain historical):
+
+| File | SHA-256 |
+|---|---|
+| `model/parameters.json` | `58a6886c917e59d233d2cd5abcf711f334f73a9ef3f340f4a5c8bde7983d507a` |
+| `scripts/build_scene.py` | `2abb505c6665eb7e215557a1681f6fc7bc72e4d2949493c275cd16c261473f6a` |
+| `scripts/vegetation_v06.py` | `4bfce5ea56de33fdc737e31c1cfafe8cb82cc460d998c98711d234c7860e3ea9` |
+| `blender/kysucka_chata_mcp_v06.blend` | `fff6f16e373aa94c20902f9cd9880f62a2569981ce5b68d2396222258626cc63` |
+
+### MCP v06 — meadow correction before steep-slope treatment
+
+The current file remains `blender/kysucka_chata_mcp_v06.blend`; its pre-meadow
+bytes are preserved in `work/v06/final/pre_meadow_correction.blend` (fff6f16e…).
+V06-MEADOW-ONLY-CORRECTION introduced shared `apply_meadow_v06`, used by normal
+`apply_v06` and live meadow-only application. All older JSON sections, other
+V06 settings, forest/lawn/terrain/cameras, shared materials and original assets
+remain unchanged. Only the builder's first-save image rebasing changed for the
+mandated deep replay path; the v03/v04/v05/v06 build hook order is unchanged.
+
+The corrected meadow has 3,869,907 linked patches and 12 reusable
+masters: staggered overlapping 0.5 m cells, 0.125/0.0625 m support/boundary
+refinement, smooth ecological mixing, arching lower leaves, atlas middle forms
+and varied tall stems. Binary 2 m omissions and screen-tier density/width jumps
+are removed. Nominal support rejection is 31.0664 m²;
+this sum may overlap and is not unique terrain loss. Full and meadow-only
+idempotence, protected semantics, actual roots/masks, replay and cold C1 passed.
+
+The bounded visual result is PARTIAL; see Meta `01_report_03.md` and
+`work/v06/final/meadow/`. Remaining limits: Large rectangular omissions are repaired and low-eye continuity improves, but fine directional bands/clumped texture and a broad bare steep slope remain; frozen short lawn and central crest also remain open.
+The accepted 0.5 exterior, fixed core, P0 CPU/OIDN/96 and all deferred optical,
+short-lawn, crest and architectural limits remain. GUI uses IMAGE_EDITOR for
+native renders after recovery; no scene visibility or machine preferences were
+changed. No whole acceptance, publication or continuing mutation grant follows.
+
+Pre-steep-slope meadow-correction hashes (historical):
+
+| File | SHA-256 |
+|---|---|
+| `model/parameters.json` | `4064dc0757f4fc89c3907b8469047986e8f16f2a99fe629b62da48f31624c711` |
+| `scripts/vegetation_v06.py` | `237aecb0fe2521d7ab0beaa8adbbccd926758217150fa7197b27336a4b1b480f` |
+| `scripts/build_scene.py` | `b3754b119311cd242d2872a9b40cdc3fdfcd0349a436964e5949775e7e063154` |
+| `blender/kysucka_chata_mcp_v06.blend` | `9f97bc9cd33739e0e104d9d003aab5f773d4b2069768c6dd453ff7860cbc6a96` |
+
+### Current MCP v06 — steep-slope meadow support correction
+
+V06-STEEP-SLOPE-SUPPORT-CORRECTION retains the current v06 path. Exact former
+9f97bc… bytes are in `work/v06/final/meadow/pre_steep_slope_correction.blend`;
+complete former trace pixels/metadata are inventoried under
+`work/v06/final/meadow/steep_slope/before/`. The measured 64.214° SW and
+63.107° exterior-left slopes exceeded the former 60° meadow threshold.
+`vegetation_v06.meadow.steep_slope` now permits only the (60°,68°] class,
+with full projected-footprint triangle normals and 0.4 local-height low forms.
+The shared meadow-only/full path preserves all 3,869,907 old
+placements and 12 old masters exactly; 15,194 new linked
+patches use 12 additional owned low-cover masters. Forest/lawn, every terrain,
+camera, shared shader/asset and all other source settings remain unchanged.
+
+Meadow-only/full fixed points, normal source replay, exhaustive actual support,
+masks, stored frames and separate cold C1 passed. Product is 159,992,657
+bytes (152.58 MiB). Bounded result: PASS.
+Both measured steep bare faces visibly carry low cover. Fine directional/speckled meadow, uniform short lawn, central unforested crest and optical/architectural limits remain unaccepted.
+Evidence: `work/v06/final/meadow/steep_slope/`, Meta `01_report_04.md`.
+P0 CPU/OIDN/96 and safe idle IMAGE_EDITOR remain; no preferences, Git
+publication, visual/architectural acceptance or continuing authority follows.
+
+Current steep-slope correction hashes (all earlier tables remain historical):
+
+| File | SHA-256 |
+|---|---|
+| `model/parameters.json` | `383bef95d3ec08f439756557bf10250f645b3c00511f3d16a47fb69fe48754d7` |
+| `scripts/vegetation_v06.py` | `6515cd6e8ffdeb31fb55cfe7802e9968364cb71771ed557c367b4507cb0361ae` |
+| `scripts/build_scene.py` | `b3754b119311cd242d2872a9b40cdc3fdfcd0349a436964e5949775e7e063154` |
+| `blender/kysucka_chata_mcp_v06.blend` | `059eaa947d64ecb1a0e3b15c2a380f800b827c54d4a1a7dd877bbb6e686f5a0b` |
+
+
+### MCP v07 — forest age variation and connected gravel trail
+
+The current saved candidate is `blender/kysucka_chata_mcp_v07.blend`
+(194,344,710 bytes), derived from preserved v06 under
+FOREST-TRAIL-V07-IMPL. The explicit `blender-mcp-live-v1` grant used existing
+Linux Blender 5.3.0; separate canonical CLI processes verified source replay,
+forced V07 idempotence and actual-product cold portability. This record grants
+no continuing mutation, installation, Git publication or visual acceptance.
+
+`model/parameters.json::forest_trail_v07` and
+`scripts/forest_trail_v07.py::apply_v07(scene, P, ROOT, *, components=None)`
+own the seed-13707 treatment after unchanged v03/v04/v05/v06 builder steps.
+All 18 older JSON sections and prior modules remain unchanged. The active
+forest has 12,977 placements, including 144 crest additions, exactly 649
+uniform baseline-scale × 0.5 replacements and 378 legacy young placements at
+factor 1. The eleven declared route-clearance XY moves and 337 edge prototype
+swaps are explicit; original tree meshes/materials and predecessor layers remain.
+
+The 198.180813 m XY / 200.616798 m graded trail reaches the actual north
+boundary at [42,138.25], with a supported closed gravel layer and the disclosed
+27.55–35.13° short gate bevel / 5 mm leaf clearance. Its 1,105 samples have
+maximum spacing 0.199972 m. Owned terrain derivatives preserve original meshes
+and exterior coordinates/UVs/normals; native free float-vector corner normals
+avoid legacy INT16 encoding drift. Actual support masks remove 41,215 old
+meadow patches; 60,552 local cover placements include 3,297 boundary repairs.
+There are 300 stone / 600 litter instances and 85 packed file images, including
+three 2K CC0 gravel maps. The original 82 image bytes remain unchanged.
+
+C1/P0 and safe idle IMAGE_EDITOR remain selected. Low branches in the walking
+witness, finite-world edges in the fixed overview, original meadow/lawn and
+glass/fireplace/architectural limits remain open to visual review. Source replay
+and checkpoints under `work/v07/` are temporary evidence, never source authority.
+The protected v06 and `work/baselines/v06-pre-v07/` recovery packet remain intact.
+The earlier candidate records above are historical.
+
+V07 SHA-256 values:
+
+| File | SHA-256 |
+|---|---|
+| `model/parameters.json` | `1b429d72ed9db1a07fde7c19e1575b01948cb4e6a62e29e970898f810fb382c4` |
+| `scripts/build_scene.py` | `50f3d248a03470b8d392202fa06c56278500321fa62b0bed88a627df3950a7a8` |
+| `scripts/forest_trail_v07.py` | `54f93c5abe0814faa12ffbc544ca3f731d4315a97f27621e1122d7031baa045c` |
+| `blender/kysucka_chata_mcp_v07.blend` | `99c4f239040e880d0d8c5e9fc761954690b707c84ce746a33ac356a86d72e384` |
+
+V07 implementation status is PARTIAL at final audit: `route.shoulder_width_m`
+contains [0.45,0.75] m but is not explicitly consumed by the module. The current
+owned soil-shader test uses 0.85 m and local cover restoration uses 1.15 m plus
+boundary repair footprints. A separately controlled irregular shoulder-width
+zone is unverified. The single correction is exhausted; a new Orchestrator
+disposition is required before further product/source mutation.
+
+
+### MCP v08 — usable vegetation candidate
+
+The explicit direct Cooperator decision in the current session authorizes the
+V08 optimization, superseding the earlier V07-only scope for this task.
+`blender/kysucka_chata_mcp_v08.blend` is the new candidate; V07 remains preserved.
+`model/parameters.json::vegetation_v08` and `scripts/vegetation_v08.py::apply_v08`
+own seed-13708 thinning to 9,733 forest trees, bounded 1–9 m height variation,
+owned simplified render masters and a separate linked lightweight viewport branch.
+All 19 prior parameter sections and prior modules remain unchanged.
+Measured final vegetation cost is 51.73% of V07 expanded triangle accounting;
+the full Solid orbit measures 42.9 FPS at 2840×1208. Native renders remain CPU P0.
+Protected cottage/interior/orchard/beds/fence/gate/paving/world/lights/cameras remain.
+V07's irregular shoulder-width gap is explicitly deferred, not accepted as fixed.
+The old full-vegetation Material Preview attempt preceded a hardware reset; recovery
+and bounded lightweight-view tests are documented in `docs/V08_VEGETATION.md`.
+No driver, backend, preferences, Git publication or architectural acceptance changed.
+This historical record grants no continuing mutation authority.
+
+V08 scene SHA-256: `1ba638c7335319c84558e4f779befe9f6a0f7a1ed255d29097359f816d2e6662`.
+V08 module SHA-256: `b4b15f3bedce142616112b49c516c1bc6a829d1b39784bdf0eda290261b52d1c`.
+
+### V08 optional working-view refinement
+
+`blender/kysucka_chata_mcp_v08_view.blend` preserves original V08 and replaces
+only its five coarse working tree meshes with source-derived branch/alpha-foliage
+LODs. Render meshes, placements, grass, masks, cottage and cameras are unchanged;
+the native V08 images remain their original evidence. The current V08 source
+selects `forest.viewport_model = source_branches`, ratio 0.3 of existing LOD1.
+Solid measured 41.8 FPS and staged Material Preview 16.7 FPS at 2840×1208 before
+a subsequently observed new system boot of unconfirmed cause. No further GPU
+stress test followed reconnection; GUI shows the saved C1 in IMAGE_EDITOR.
+See `docs/V08_VEGETATION.md` and temporary `work/v08/viewport_review/` evidence.
+This record is not visual acceptance or continuing mutation authority.
+
+Working-view scene SHA-256: `07146b03e7e74a54c6368fb51e2affa695d8edec58045953a6fc5d62c084104e`.
+Current V08 module SHA-256: `cd3137ed08c09726a29a06ba08452f1840a4981e09267de6c94d965dd492fc73`.

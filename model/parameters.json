@@ -1221,5 +1221,1448 @@
     "status": "visualization candidate; Picea mariana is the Cooperator-selected forest asset, not a native-species claim",
     "edge_grass_members": 3,
     "composition_correction": "Single correction after preview 1: fuller Norway-spruce front stand, black spruce concentrated in deeper layers; lower near/right stand heights; clustered bed plants and edge tufts."
+  },
+  "site_v05": {
+    "seed": 13705,
+    "terrain_extent": [
+      -260,
+      320,
+      -220,
+      260
+    ],
+    "protected_terrace": [
+      -15,
+      19,
+      -10,
+      11.5
+    ],
+    "ground_z": -0.055,
+    "shell_bottom_z": -90,
+    "world_grid_m": 5,
+    "fine_x": [
+      -20,
+      22,
+      0.5
+    ],
+    "fine_y": [
+      -12,
+      20.5,
+      0.5
+    ],
+    "ridge_chains": [
+      {
+        "width_m": 18,
+        "points": [
+          [
+            -50.737770718378854,
+            2.8819997816185925,
+            11.321841420886775
+          ],
+          [
+            -47.69363723660101,
+            6.047898602667551,
+            11.958040849518383
+          ],
+          [
+            -44.21462754314062,
+            9.66606868386635,
+            12.999413897414211
+          ],
+          [
+            -37.691484367902405,
+            16.450137586114103,
+            10.821359324344783
+          ],
+          [
+            -31.16834119266418,
+            23.234206488361856,
+            12.814595105917812
+          ],
+          [
+            -24.645198017425955,
+            30.01827539060961,
+            13.624942053506366
+          ],
+          [
+            -18.12205484218773,
+            36.802344292857356,
+            12.163892896228385
+          ],
+          [
+            -11.598911666949506,
+            43.58641319510511,
+            11.056016195531429
+          ],
+          [
+            -5.07576849171128,
+            50.37048209735286,
+            8.664139266540339
+          ],
+          [
+            2.752003318574591,
+            58.51136478005017,
+            9.042414778432374
+          ],
+          [
+            5.796136800352425,
+            61.67726360109911,
+            8.94017185955646
+          ]
+        ]
+      },
+      {
+        "width_m": 26,
+        "points": [
+          [
+            -99.29102644712529,
+            11.540393077460614,
+            26.96675008625213
+          ],
+          [
+            -94.20083603497218,
+            16.83419110609985,
+            26.203655448018846
+          ],
+          [
+            -88.38347556394007,
+            22.884245995973245,
+            27.546652063343345
+          ],
+          [
+            -77.47592468075484,
+            34.228098914485884,
+            25.851796527633272
+          ],
+          [
+            -66.56837379756962,
+            45.57195183299852,
+            27.8373942997949
+          ],
+          [
+            -55.66082291438439,
+            56.91580475151116,
+            30.475206142076985
+          ],
+          [
+            -44.75327203119916,
+            68.25965767002378,
+            27.466168364349702
+          ],
+          [
+            -33.845721148013936,
+            79.60351058853644,
+            25.037119767184247
+          ],
+          [
+            -22.938170264828706,
+            90.94736350704906,
+            24.56473357285748
+          ],
+          [
+            -9.849109205006428,
+            104.55998700926423,
+            21.46075366438792
+          ],
+          [
+            -4.758918792853329,
+            109.85378503790345,
+            21.226462122334393
+          ]
+        ]
+      },
+      {
+        "width_m": 34,
+        "points": [
+          [
+            -157.3180881717247,
+            21.88822896761326,
+            47.23919519626689
+          ],
+          [
+            -149.78261020863528,
+            29.725126049226247,
+            47.93829518532273
+          ],
+          [
+            -141.17063539367598,
+            38.68157985678393,
+            50.596764607082484
+          ],
+          [
+            -125.02318261562726,
+            55.474930745954595,
+            46.56534578618779
+          ],
+          [
+            -108.87572983757855,
+            72.26828163512526,
+            49.05214167497525
+          ],
+          [
+            -92.72827705952982,
+            89.06163252429593,
+            52.52929022921558
+          ],
+          [
+            -76.5808242814811,
+            105.85498341346658,
+            47.48458964219203
+          ],
+          [
+            -60.43337150343238,
+            122.64833430263727,
+            47.302307540628476
+          ],
+          [
+            -44.28591872538367,
+            139.44168519180792,
+            42.77834631747034
+          ],
+          [
+            -24.9089753917252,
+            159.59370625881274,
+            41.0295085948853
+          ],
+          [
+            -17.3734974286358,
+            167.4306033404257,
+            41.428207368768525
+          ]
+        ]
+      },
+      {
+        "width_m": 14,
+        "points": [
+          [
+            1.405392098428262,
+            29.698162139853416,
+            5.66004182222393
+          ],
+          [
+            3.201929890952888,
+            31.566561444079028,
+            7.166994926506739
+          ],
+          [
+            8.591543268526767,
+            37.17175935675586,
+            6.30667023839977
+          ],
+          [
+            11.585772922734474,
+            40.28575819713188,
+            6.633768617472302
+          ]
+        ]
+      }
+    ],
+    "gaussian_hills": [
+      [
+        -175,
+        -30,
+        48,
+        70,
+        70
+      ],
+      [
+        -100,
+        -115,
+        55,
+        70,
+        55
+      ],
+      [
+        75,
+        -130,
+        48,
+        110,
+        60
+      ],
+      [
+        95,
+        135,
+        65,
+        90,
+        70
+      ]
+    ],
+    "valley": {
+      "axis_y": 3,
+      "start_x": 20,
+      "depth_m": 24,
+      "floor_x": 115,
+      "far_ridge_x": 280,
+      "far_ridge_height_m": 62,
+      "far_ridge_width_m": 50,
+      "width_m": 22,
+      "widen_per_m": 0.15,
+      "side_blend_m": 35,
+      "terrace_blend_m": 14,
+      "far_ridge_height_profile": {
+        "base": 0.85,
+        "waves": [
+          [
+            0.12,
+            0.042,
+            0.25
+          ],
+          [
+            0.08,
+            0.096,
+            1.1
+          ]
+        ]
+      }
+    },
+    "garden_polygon": [
+      [
+        16.6,
+        -8.62
+      ],
+      [
+        18.25,
+        1
+      ],
+      [
+        19.2,
+        15.5
+      ],
+      [
+        -15.5,
+        16.5
+      ],
+      [
+        -15,
+        -7.8
+      ]
+    ],
+    "garden_area_m2": 810.91,
+    "gate": {
+      "center_x": 7.875,
+      "clear_x": [
+        6.775,
+        8.975
+      ],
+      "leaf_end_gap_m": 0.02,
+      "swing_radius_m": 2.3
+    },
+    "path_extension": {
+      "x": 7.875,
+      "ys": [
+        -6.1,
+        -6.7,
+        -7.3,
+        -7.9
+      ],
+      "z": 0.055,
+      "dimensions": [
+        2.1,
+        0.55,
+        0.11
+      ]
+    },
+    "clearance": {
+      "hard_surface_m": 0.1,
+      "post_m": 0.15,
+      "tree_trunk_m": 0.25
+    },
+    "forest": {
+      "counts": [
+        300,
+        350,
+        300,
+        250
+      ],
+      "mariana_fraction": 0.65,
+      "spacing_m": 3,
+      "garden_clearance_m": 8,
+      "height_m": [
+        7,
+        13
+      ],
+      "max_slope_deg": 40,
+      "high_lod_every": 12,
+      "high_lod_radius_m": 60
+    },
+    "grass": {
+      "chunk_m": 8,
+      "lawn_patch_m": 0.5,
+      "boundary_patch_m": 0.125,
+      "lawn_blades": [
+        400,
+        200,
+        100
+      ],
+      "lawn_height_m": [
+        0.04,
+        0.1
+      ],
+      "lawn_embed_m": 0.003,
+      "lawn_lod_distance_m": [
+        18,
+        30
+      ],
+      "lawn_path_high_detail_m": 3,
+      "meadow_height_m": [
+        0.25,
+        0.65
+      ],
+      "meadow_embed_m": 0.012,
+      "meadow_radius_m": 0.35,
+      "meadow_density": [
+        2,
+        0.5,
+        0.12
+      ],
+      "meadow_distance_m": [
+        40,
+        100,
+        180
+      ],
+      "meadow_max_clusters": 12000,
+      "meadow_max_slope_deg": 35,
+      "meadow_garden_band_m": 18,
+      "meadow_forest_edge_m": 12,
+      "tile_m": 1,
+      "phase_offset": [
+        0.317,
+        0.419
+      ],
+      "normal_strength": 0.35,
+      "maps": {
+        "color": "assets/textures/grass/Grass005/Grass005_1K-JPG_Color.jpg",
+        "roughness": "assets/textures/grass/Grass005/Grass005_1K-JPG_Roughness.jpg",
+        "normal": "assets/textures/grass/Grass005/Grass005_1K-JPG_NormalGL.jpg"
+      },
+      "lawn_blade_width_m": [
+        0.0018,
+        0.0038
+      ],
+      "meadow_cluster_members": [
+        6,
+        6,
+        3,
+        3
+      ],
+      "meadow_near_detail_m": 40,
+      "meadow_density_scale_far": 0.5,
+      "meadow_projection_threshold_m": 0.01,
+      "selected_texture_resolution": "1K-JPG",
+      "texture_budget_basis": "1K maps, far-density halving, and 32 m meadow instance sectors reduce process memory while retaining the 8 m lawn chunks and all near detail",
+      "meadow_chunk_m": 32
+    },
+    "review_cameras": {
+      "CAM_V05_OVERVIEW": {
+        "location": [
+          52,
+          -60,
+          58
+        ],
+        "target": [
+          2,
+          3,
+          0
+        ],
+        "lens": 35
+      },
+      "CAM_V05_VALLEY_INSIDE": {
+        "location": [
+          12.2,
+          3.2,
+          2
+        ],
+        "target": [
+          65,
+          3.2,
+          1.35
+        ],
+        "lens": 30
+      },
+      "CAM_V05_ORBIT_NE": {
+        "location": [
+          42,
+          38,
+          24
+        ],
+        "target": [
+          2,
+          3,
+          2
+        ],
+        "lens": 35
+      },
+      "CAM_V05_ORBIT_NW": {
+        "location": [
+          -40,
+          38,
+          24
+        ],
+        "target": [
+          2,
+          3,
+          2
+        ],
+        "lens": 35
+      },
+      "CAM_V05_ORBIT_SW": {
+        "location": [
+          -40,
+          -34,
+          24
+        ],
+        "target": [
+          2,
+          3,
+          2
+        ],
+        "lens": 35
+      },
+      "CAM_V05_ORBIT_SE": {
+        "location": [
+          42,
+          -34,
+          24
+        ],
+        "target": [
+          2,
+          3,
+          2
+        ],
+        "lens": 35
+      },
+      "CAM_V05_LAWN_DETAIL": {
+        "location": [
+          11,
+          -6,
+          0.24
+        ],
+        "target": [
+          10.2,
+          -4.2,
+          0
+        ],
+        "lens": 55
+      },
+      "CAM_V05_MEADOW_DETAIL": {
+        "location": [
+          23,
+          -6,
+          0.65
+        ],
+        "target": [
+          25,
+          -4,
+          0.22
+        ],
+        "lens": 50
+      }
+    },
+    "budget": {
+      "target_unique_evaluated_triangles": 1500000,
+      "max_unique_evaluated_triangles_exclusive": 3000000,
+      "max_file_bytes_exclusive": 94371840,
+      "target_render_rss_bytes": 3221225472
+    },
+    "status": "Unsurveyed visualization hypothesis; retained C1; visual acceptance pending",
+    "composition_correction": "One correction after Preview 2: undulate the far valley ridge; use fuller near-meadow cluster masters at unchanged scatter density/cap; complete gate hinges/latch."
+  },
+  "vegetation_v06": {
+    "seed": 13706,
+    "texture": "1K",
+    "profile": "P0",
+    "stands": {
+      "W": [
+        [
+          -185,
+          -65,
+          50
+        ],
+        [
+          -145,
+          20,
+          50
+        ],
+        [
+          -110,
+          100,
+          55
+        ],
+        [
+          -55,
+          115,
+          40
+        ],
+        [
+          -35,
+          42,
+          25
+        ]
+      ],
+      "N": [
+        [
+          10,
+          75,
+          32
+        ],
+        [
+          95,
+          125,
+          52
+        ],
+        [
+          195,
+          140,
+          45
+        ],
+        [
+          245,
+          112,
+          28
+        ]
+      ],
+      "S": [
+        [
+          -105,
+          -110,
+          42
+        ],
+        [
+          5,
+          -133,
+          48
+        ],
+        [
+          135,
+          -128,
+          44
+        ],
+        [
+          220,
+          -103,
+          32
+        ]
+      ],
+      "FN": [
+        [
+          272,
+          22,
+          38
+        ],
+        [
+          282,
+          75,
+          42
+        ],
+        [
+          293,
+          135,
+          42
+        ],
+        [
+          307,
+          168,
+          22
+        ]
+      ],
+      "FS": [
+        [
+          272,
+          -20,
+          38
+        ],
+        [
+          282,
+          -76,
+          42
+        ],
+        [
+          299,
+          -136,
+          34
+        ]
+      ]
+    },
+    "glades": [
+      [
+        -78,
+        40,
+        16,
+        23
+      ],
+      [
+        105,
+        116,
+        20,
+        15
+      ],
+      [
+        102,
+        -125,
+        24,
+        16
+      ],
+      [
+        276,
+        89,
+        15,
+        21
+      ]
+    ],
+    "maps_2k": {
+      "Color": "work/downloads/Grass005/preserved_2K_maps/Grass005_2K-JPG_Color.jpg",
+      "Roughness": "work/downloads/Grass005/preserved_2K_maps/Grass005_2K-JPG_Roughness.jpg",
+      "NormalGL": "work/downloads/Grass005/preserved_2K_maps/Grass005_2K-JPG_NormalGL.jpg"
+    },
+    "cameras": {
+      "CAM_V06_LAWN": {
+        "location": [
+          -10,
+          7,
+          0.24
+        ],
+        "target": [
+          -11,
+          8.8,
+          0.06
+        ],
+        "lens": 55,
+        "ground_relative": true
+      },
+      "CAM_V06_MEADOW": {
+        "location": [
+          -20,
+          8,
+          0.8
+        ],
+        "target": [
+          -22,
+          10,
+          0.22
+        ],
+        "lens": 50,
+        "ground_relative": true
+      },
+      "CAM_V06_FOREST": {
+        "location": [
+          -18,
+          18,
+          1.65
+        ],
+        "target": [
+          -32,
+          30,
+          3
+        ],
+        "lens": 35,
+        "ground_relative": true
+      },
+      "CAM_V06_NW": {
+        "location": [
+          -36,
+          34,
+          54
+        ],
+        "target": [
+          2,
+          3,
+          2
+        ],
+        "lens": 35,
+        "ground_relative": false
+      },
+      "CAM_V06_EXTERIOR": {
+        "location": [
+          14.65,
+          3.19999994,
+          1.96983901
+        ],
+        "lens": 30,
+        "copy_inside": true
+      }
+    },
+    "landscape_transform": {
+      "factor": 0.5,
+      "fixed_core": [
+        -15.5,
+        19.2,
+        -10,
+        16.5
+      ],
+      "datum": -0.055,
+      "join_m": 8,
+      "authority": "Direct Cooperator decision in exchange 01/03; cottage, enclosed garden, path and cameras unchanged",
+      "meadow": "Resampled on the compressed surface at the accepted natural blade/stem scales"
+    },
+    "forest": {
+      "crown_spacing_factor": 0.5,
+      "mid_abies": 0.9,
+      "rear_abies": 0.85,
+      "edge_height_m": [
+        5.5,
+        10.5
+      ],
+      "abies_height_m": [
+        10,
+        14.5
+      ],
+      "mariana_height_m": [
+        9,
+        12.5
+      ],
+      "abies_width_scale": [
+        1.2,
+        1.45
+      ],
+      "mariana_width_scale": [
+        1.35,
+        1.5
+      ],
+      "tree_embed_m": 0.006,
+      "garden_clearance_before_contraction_m": 8,
+      "maximum_slope_deg": 50,
+      "high_lod_crown_px": 24,
+      "high_lod_near_m": 35,
+      "high_lod_edge_depth_m": 18,
+      "far_glade_half_width_m": 6
+    },
+    "lawn": {
+      "patch_sizes_m": [
+        0.5,
+        0.125,
+        0.0625
+      ],
+      "density_m2": [
+        1800,
+        2400
+      ],
+      "height_m": [
+        0.04,
+        0.1
+      ],
+      "thatch_height_m": [
+        0.01,
+        0.03
+      ],
+      "thatch_fraction": 0.15,
+      "width_m": [
+        0.0018,
+        0.0038
+      ],
+      "bend_m": [
+        0.01,
+        0.06
+      ],
+      "segments": 6
+    },
+    "meadow": {
+      "mechanism": "continuous-root-field-v1",
+      "patch_sizes_m": [
+        0.5,
+        0.125,
+        0.0625
+      ],
+      "density_m2": [
+        1200,
+        1800,
+        2400,
+        2800
+      ],
+      "density_role": "Four smoothly mixed ecological variants, same physical density at every support size and distance",
+      "variant_height_m": [
+        [
+          0.035,
+          0.1
+        ],
+        [
+          0.04,
+          0.14
+        ],
+        [
+          0.05,
+          0.18
+        ],
+        [
+          0.04,
+          0.18
+        ]
+      ],
+      "width_m": [
+        0.003,
+        0.008
+      ],
+      "bend_ratio": [
+        0.5,
+        1.4
+      ],
+      "thatch_height_m": [
+        0.01,
+        0.03
+      ],
+      "thatch_fraction": [
+        0.28,
+        0.2,
+        0.15,
+        0.12
+      ],
+      "segments": 5,
+      "middle_density_m2": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "middle_height_m": [
+        0.12,
+        0.3
+      ],
+      "upper_density_m2": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "upper_tip_height_m": [
+        0.25,
+        0.65
+      ],
+      "ecological_scales_m": [
+        8,
+        27,
+        65
+      ],
+      "row_pitch_ratio": 0.8660254037844386,
+      "jitter_fraction": 0.1,
+      "camera_dependent_lod": false,
+      "binary_field_clearings": false,
+      "boundary_refinement": true,
+      "steep_slope": {
+        "starts_above_degrees": 60.0,
+        "maximum_degrees": 68.0,
+        "height_factor": 0.4,
+        "normal_footprint": "Every clipped actual terrain triangle over full projected geometry bounds; conservative 68 degree envelope",
+        "preservation": "No change to old normal-slope traversal or masters; descendants of formerly excluded steep parents stay strictly above 60 degrees",
+        "growth": "Same folded lower leaves/ecological mixture/atlas materials; all local heights including tall stems reduced to 40 percent"
+      }
+    },
+    "support": {
+      "method": "Exact piecewise-linear triangle clipping over every transformed root bounds rectangle",
+      "subdivide_spread_m": 0.005,
+      "root_definition": "v06_t <= 0.002",
+      "minimum_embed_m": 0.002,
+      "max_burial_m": 0.02,
+      "floating_tolerance_m": 0.001,
+      "position_tolerance_m": 0.0001
+    }
+  },
+  "forest_trail_v07": {
+    "schema": 1,
+    "seed": 13707,
+    "input_v06_sha256": "059eaa947d64ecb1a0e3b15c2a380f800b827c54d4a1a7dd877bbb6e686f5a0b",
+    "status": "Bounded editable visualization candidate; acceptance pending",
+    "counts": {
+      "existing": 12833,
+      "crest": 144,
+      "total": 12977,
+      "half_size": 649,
+      "legacy_young": 378
+    },
+    "forest": {
+      "selection_center": [
+        2,
+        3
+      ],
+      "sectors": 8,
+      "distance_bands_m": [
+        40,
+        85
+      ],
+      "half_factor": 0.5,
+      "legacy_prototype": 4,
+      "embed_m": 0.006,
+      "xy_overrides": {
+        "V06_FOREST_+000_+000:8": [
+          4.938873,
+          31.237049
+        ],
+        "V06_FOREST_+000_+001:117": [
+          3.535775,
+          43.047478
+        ],
+        "V06_FOREST_+000_+001:12": [
+          3.561706,
+          55.314976
+        ],
+        "V06_FOREST_+000_+001:135": [
+          4.640203,
+          36.692596
+        ],
+        "V06_FOREST_+000_+001:161": [
+          0.20293,
+          53.641998
+        ],
+        "V06_FOREST_+000_+001:198": [
+          0.196947,
+          52.147243
+        ],
+        "V06_FOREST_+000_+001:252": [
+          0.690454,
+          45.264954
+        ],
+        "V06_FOREST_+000_+001:258": [
+          0.249164,
+          50.682987
+        ],
+        "V06_FOREST_+000_+001:265": [
+          0.213125,
+          51.499126
+        ],
+        "V06_FOREST_+000_+001:70": [
+          3.901951,
+          61.072041
+        ],
+        "V06_FOREST_+000_+002:80": [
+          4.023192,
+          64.043343
+        ]
+      },
+      "abies_height_factor": [
+        0.9,
+        1.1
+      ],
+      "abies_horizontal_factor": [
+        0.96,
+        1.12
+      ],
+      "mariana_height_factor": [
+        0.85,
+        1.15
+      ],
+      "mariana_horizontal_factor": [
+        1.05,
+        1.25
+      ],
+      "maximum_swaps": 384,
+      "edge_radius_m": 4,
+      "edge_max_other_roots": 12,
+      "swap_route_clearance_m": 5
+    },
+    "crest": {
+      "polygon": [
+        [
+          132,
+          -6
+        ],
+        [
+          140,
+          -8
+        ],
+        [
+          154,
+          -2
+        ],
+        [
+          158,
+          12
+        ],
+        [
+          151,
+          25
+        ],
+        [
+          136,
+          26
+        ],
+        [
+          129,
+          15
+        ],
+        [
+          130,
+          3
+        ]
+      ],
+      "grid_m": 0.75,
+      "grid_i": [
+        170,
+        213
+      ],
+      "grid_j": [
+        -12,
+        37
+      ],
+      "glades": [
+        [
+          144,
+          10,
+          2.7,
+          3.5
+        ],
+        [
+          136,
+          1,
+          2.4,
+          2.8
+        ]
+      ],
+      "max_slope_deg": 50,
+      "existing_root_clearance_m": 1,
+      "new_root_clearance_m": 1.55,
+      "abies_count": 122,
+      "mariana_count": 22,
+      "height_m": [
+        4,
+        6.5
+      ]
+    },
+    "route": {
+      "controls_xy": [
+        [
+          7.875,
+          -8.393591772
+        ],
+        [
+          8.2,
+          -12.2
+        ],
+        [
+          13.5,
+          -16
+        ],
+        [
+          21.5,
+          -13.5
+        ],
+        [
+          23,
+          -4
+        ],
+        [
+          22,
+          9
+        ],
+        [
+          21,
+          18
+        ],
+        [
+          15,
+          24
+        ],
+        [
+          4,
+          28
+        ],
+        [
+          2.5,
+          40.5
+        ],
+        [
+          1.5,
+          52
+        ],
+        [
+          2,
+          63
+        ],
+        [
+          2.5,
+          76
+        ],
+        [
+          10,
+          90
+        ],
+        [
+          15,
+          105
+        ],
+        [
+          30,
+          122
+        ],
+        [
+          42,
+          128
+        ],
+        [
+          42,
+          138.25
+        ]
+      ],
+      "tangent_factor": 0.85,
+      "sample_m": 0.2,
+      "maximum_grade": 0.3,
+      "maximum_profile_grading_m": 0.1,
+      "crown": 0.02,
+      "gravel_thickness_m": 0.015,
+      "width_base_m": 1.25,
+      "width_wave_m": 0.06,
+      "width_wave_length_m": 17,
+      "woods_width_m": 1.12,
+      "woods_stations_m": [
+        55,
+        120
+      ],
+      "width_blend_m": 5,
+      "shoulder_width_m": [
+        0.45,
+        0.75
+      ],
+      "grading_beyond_edge_m": 1,
+      "maximum_grading_m": 0.45,
+      "boundary_exit_ground_xyz": [
+        42,
+        138.25,
+        1.142006468
+      ]
+    },
+    "threshold": {
+      "x_span": [
+        6.825,
+        8.925
+      ],
+      "slab_end_y": -8.175,
+      "slab_top_z": 0.11,
+      "top_z": 0,
+      "finish_inside_gate_m": 0.035,
+      "flat_outside_gate_m": 0.4,
+      "gate_leaf_min_z": 0.005
+    },
+    "material": {
+      "asset": "gravel_ground_01",
+      "physical_width_m": 3,
+      "resolution": "2k",
+      "maps": {
+        "diffuse": "assets/textures/gravel/gravel_ground_01/gravel_ground_01_diff_2k.jpg",
+        "roughness": "assets/textures/gravel/gravel_ground_01/gravel_ground_01_rough_2k.jpg",
+        "NormalGL": "assets/textures/gravel/gravel_ground_01/gravel_ground_01_nor_gl_2k.jpg"
+      },
+      "roughness": [
+        0.78,
+        0.94
+      ],
+      "normal_strength": 0.28,
+      "saturation": 0.62,
+      "value": 0.82
+    },
+    "clearance": {
+      "travel_margin_m": 0.08,
+      "grass_exposure_m": 0.001,
+      "grass_burial_m": 0.02,
+      "root_spread_refine_m": 0.005,
+      "root_embed_m": 0.002,
+      "shoulder_grid_m": 0.125,
+      "maximum_stones": 300,
+      "maximum_litter": 600
+    },
+    "cameras": {
+      "overview": {
+        "location": [
+          160,
+          -180,
+          175
+        ],
+        "target": [
+          55,
+          50,
+          8
+        ],
+        "lens": 50,
+        "shift": [
+          0,
+          -0.215
+        ]
+      },
+      "gate": {
+        "location": [
+          11,
+          -14,
+          1.65
+        ],
+        "ground_relative": true,
+        "target": [
+          7.875,
+          -7.4,
+          0.12
+        ],
+        "lens": 45
+      },
+      "walking": {
+        "station_m": 80,
+        "eye_m": 1.65,
+        "lookahead_m": 10,
+        "lens": 35
+      },
+      "age": {
+        "reserved_id": "V06_FOREST_+000_+000:8",
+        "eye_xy": [
+          10,
+          24
+        ],
+        "eye_height_m": 1.65,
+        "neighbour_range_m": [
+          2,
+          5
+        ],
+        "lens": 45
+      }
+    }
+  },
+  "vegetation_v08": {
+    "schema": 1,
+    "seed": 13708,
+    "input_v07_sha256": "99c4f239040e880d0d8c5e9fc761954690b707c84ce746a33ac356a86d72e384",
+    "forest": {
+      "target_count": 9733,
+      "render_triangle_ratio": 0.55,
+      "maximum_height_m": 9.0,
+      "minimum_height_m": 1.0,
+      "height_variation_fraction": 0.1,
+      "protect_crest": true,
+      "strata_grid_m": 12.0,
+      "viewport_radial_segments": 10,
+      "viewport_canopy_rings": 5,
+      "viewport_model": "source_branches",
+      "viewport_source_triangle_ratio": 0.3
+    },
+    "grass": {
+      "render_triangle_ratio": 0.52,
+      "height_factors": [
+        0.84,
+        0.91,
+        0.97,
+        1.0
+      ],
+      "field_scales_m": [
+        3.5,
+        11.0,
+        29.0
+      ],
+      "viewport_stride": 128,
+      "ecological_height_factors": [1.0, 0.90, 0.76, 0.76],
+      "upper_density_factors": [0.85, 0.90, 0.95, 1.0],
+      "root_preserve_z_m": 0.002,
+      "dark_card_height_factor": 0.72,
+      "ground_value_factor": 0.9,
+      "foliage_value_factor": 1.12
+    },
+    "refill": {"radius_m": 0.46, "grid_m": 0.125, "reason": "Restore old trunk-clearance gaps exposed by 25 percent thinning; supported low cover only"},
+    "viewport": {
+      "mode": "SOLID",
+      "target_fps": 20,
+      "benchmark_dimensions": [
+        2840,
+        1208
+      ],
+      "full_original_material_preview": "prohibited after hardware reset; evaluate lightweight working geometry only"
+    },
+    "shoulder_disposition": {
+      "status": "DEFERRED_EXPLICITLY",
+      "decision": "Retain V07 route/terrain/threshold unchanged; irregular 0.45–0.75 m shoulder width remains unverified. Resolve in a separate bounded route task after vegetation usability."
+    },
+    "preservation": "Cottage, roof, interior, glass, original planted beds, orchard, fence, gate, paving, lights, world and old cameras unchanged; original scenes and source libraries retained."
+  },
+  "nature_study_v09": {
+    "schema": 1,
+    "seed": 13709,
+    "input_v08_view_sha256": "07146b03e7e74a54c6368fb51e2affa695d8edec58045953a6fc5d62c084104e",
+    "purpose": "Bounded native low-resolution environment direction A/B; not landscape or architectural acceptance",
+    "camera": {
+      "name": "CAM_V09_ENVIRONMENT_STUDY",
+      "location": [
+        62.0,
+        -27.0,
+        12.0
+      ],
+      "target": [
+        7.0,
+        11.0,
+        3.0
+      ],
+      "lens_mm": 35.0,
+      "sensor_width_mm": 36.0,
+      "shift_x": 0.0,
+      "shift_y": 0.0,
+      "clip_end_m": 600.0
+    },
+    "render": {
+      "resolution": [
+        960,
+        540
+      ],
+      "samples": 96,
+      "device": "CPU",
+      "threads": 8,
+      "frame": 0,
+      "seed": 0,
+      "denoiser": "OPENIMAGEDENOISE",
+      "prefilter": "ACCURATE",
+      "quality": "HIGH",
+      "view": "AgX",
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0
+    },
+    "grass": {
+      "root_preserve_t": 0.002001,
+      "root_preserve_z_m": 0.002,
+      "low_height_factor": 0.72,
+      "atlas_height_factor": 0.36,
+      "tall_height_factor": 0.55,
+      "blade_value_factor": 1.18,
+      "blade_saturation": 0.74,
+      "palette_mix": 0.28,
+      "palette_color_linear": [
+        0.18,
+        0.24,
+        0.068
+      ],
+      "distance_near_m": 45.0,
+      "distance_far_m": 115.0,
+      "far_keep_fraction": 0.12,
+      "house_keep_radius_m": 22.0,
+      "house_fade_radius_m": 42.0,
+      "height_random_range": [
+        0.82,
+        1.06
+      ],
+      "viewport_stride": 128,
+      "component_contraction_cap": 0.98
+    },
+    "substrate": {
+      "color_mix": 0.48,
+      "color_linear": [
+        0.15,
+        0.215,
+        0.062
+      ],
+      "spatial_scale_m": 18.0,
+      "variation_fraction": 0.1,
+      "normal_strength": 0.24,
+      "roughness": 0.93
+    },
+    "lighting": {
+      "sun_name": "V09_SUN_WARM",
+      "sun_direction_to_source": [
+        0.62,
+        -0.68,
+        0.38
+      ],
+      "sun_energy": 2.6,
+      "sun_color_linear": [
+        1.0,
+        0.84,
+        0.64
+      ],
+      "sun_angle_degrees": 2.0,
+      "world_strength": 0.3,
+      "world_color_linear": [
+        0.46,
+        0.61,
+        0.79
+      ],
+      "atmosphere_density": 0.0
+    },
+    "preservation": "All prior parameter sections, source modules, old cameras, world/light datablocks, tree placements/render prototypes, terrain geometry, cottage and hard landscape retained; old grass retained hidden. V07 shoulder gap deferred."
   }
 }
