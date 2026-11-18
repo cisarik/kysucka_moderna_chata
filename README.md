@@ -4,6 +4,8 @@
 
 ![01](github/02.png)
 
+![01](github/02.png)
+
 ## Začni tu
 
 1. Pracuj v Git repozitári https://github.com/cisarik/kysucka_moderna_chata.
